@@ -12,11 +12,11 @@
     </head>
     <body class="font-sans text-gray-900 antialiased h-screen">
     <x-header />
-        <div class="bg-zinc-50  text-dark  ">
+{{--        <div class="bg-zinc-50  text-dark  ">--}}
         <!-- Start Content -->
             {{ $slot }}
         <!-- End Content -->
-        </div>
+{{--        </div>--}}
     <x-footer />
         @vite('resources/js/app.js')
         @livewireScripts

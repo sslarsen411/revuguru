@@ -1,11 +1,11 @@
-<footer class="fixed mt-4 bottom-0 z-20 w-full p-4 md:flex md:items-center md:justify-between md:p-6
+<footer class=" mt-4 bottom-0 z-20 w-full p-4 md:flex md:items-center md:justify-between md:p-6
             text-zinc-50 bg-gray-800 border-gray-600">
     <div class="mx-auto w-full">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com" class="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">
+                    <span class="self-center text-2xl text-amber-500 font-semibold whitespace-nowrap ">
                         The Rave Review Guru
                     </span>
                 </a>
@@ -34,7 +34,7 @@
 {{--                    </ul>--}}
 {{--                </div>--}}
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold  uppercase">Legal</h2>
+                    <h2 class="mb-6 text-sm font-semibold  uppercase text-orange-500">Legal</h2>
                     <ul class="text-gray-400">
                         <li class="mb-4">
                             <a href="#" class="hover:underline">Privacy Policy</a>
