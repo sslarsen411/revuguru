@@ -11,17 +11,12 @@
         <link rel="icon" href="/images/favicon.svg" type="images/svg+xml"/>
     </head>
     <body class="font-sans text-gray-900 antialiased h-screen">
-    <x-header />
-{{--        <div class="bg-zinc-50  text-dark  ">--}}
+        <x-header />
         <!-- Start Content -->
-            {{ $slot }}
+        {{ $slot }}
         <!-- End Content -->
-{{--        </div>--}}
-    <x-footer />
+        <x-footer />
         @vite('resources/js/app.js')
         @livewireScripts
-{{--        @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@11"])--}}
-{{--        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>--}}
-{{--        @stack('scripts')--}}
     </body>
 </html>

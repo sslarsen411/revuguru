@@ -8,4 +8,45 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-rust: #731702;
+    --color-bluegray: #465475;
+    --color-avocado-100: oklch(0.99 0 0);
+    --color-avocado-200: oklch(0.98 0.04 113.22);
+    --color-avocado-300: oklch(0.94 0.11 115.03);
+    --color-avocado-400: oklch(0.92 0.19 114.08);
+    --color-avocado-500: oklch(0.84 0.18 117.33);
+    --color-avocado-600: oklch(0.53 0.12 118.34);
 }
+.two__col {
+    @apply flex items-center flex-col  mx-auto max-w-screen-2xl;
+}
+.two__col-pic-l {
+    @apply md:flex-row;
+}
+
+
+.card_group {
+    @apply relative h-64 perspective-[1200px];
+}
+.card__body {
+    @apply  relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d]
+    group-hover:[transform:rotateY(180deg)] group-focus-within:[transform:rotateY(180deg)];
+}
+.card__body-div {
+    @apply flex flex-col place-items-center;
+}
+.card__front,
+.card__back{
+    @apply absolute inset-0 shadow-xl;
+}
+.card__front{
+    @apply overflow-hidden rounded-2xl bg-gradient-to-br from-stone-50 to-stone-200 p-6  [backface-visibility:hidden];
+}
+.card__back{
+@apply rounded-2xl bg-gradient-to-br from-slate-600 to-slate-900 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden];
+}
+
+.flip-inner { transform-style: preserve-3d; transition: transform .6s; }
+.flip-card:hover .flip-inner, .flip-card:focus-within .flip-inner { transform: rotateY(180deg); }
+.flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { transform: rotateY(180deg); }

@@ -1,10 +1,12 @@
-<footer class=" mt-4 bottom-0 z-20 w-full p-4 md:flex md:items-center md:justify-between md:p-6
-            text-zinc-50 bg-gray-800 border-gray-600">
+<footer class=" border-t-amber-500 border-2 bottom-0 z-20 w-full p-4 md:flex md:items-center md:justify-between md:p-6
+            text-zinc-50 bg-slate-900 border-gray-600">
     <div class="mx-auto w-full">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
+                    <div class="bg-amber-300 rounded-full mx-4">
+                        <img src="{{URL::asset("/images/review-guru-bust.png")}}" class="h-16 px-2 w-auto inline" alt="guru">
+                    </div>
                     <span class="self-center text-2xl text-amber-500 font-semibold whitespace-nowrap ">
                         The Rave Review Guru
                     </span>
@@ -46,14 +48,14 @@
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-gray-700 sm:mx-auto  lg:my-8" />
+        <hr class="my-6 border-amber-700 sm:mx-auto  lg:my-8" />
         <div class="sm:flex sm:items-center sm:flex-col sm:justify-between">
-            <p class="text-sm text-center mt-4">
+            <p class="text-sm text-center mt-4 text-amber-500">
                 Another <strong>Mojo Impact</strong><sup>&trade;</sup> Website
             </p>
             <p class="text-xs text-center">
                 &copy; Copyright 2012 &mdash; {{ date('Y') }}
-                <a href="#" class="hover:underline">Mojo Impact LLC</a><br>
+                <a href="https://www.mojoimpact.com" class="hover:underline text-amber-500 hover:text-amber-200">Mojo Impact LLC</a><br>
                 <span class="text-xs text-center">All Rights Reserved.</span>
             </p>
 {{--            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">--}}
@@ -75,19 +77,4 @@
 {{--            </div>--}}
         </div>
     </div>
-{{--    <div class="w-3/4 mx-auto text-zinc-900">--}}
-
-{{--        <p class="text-sm md:text-base font-medium text-center text-pink-900">--}}
-{{--            <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Support</a>--}}
-{{--        </p>--}}
-{{--        <p class="text-sm text-center mt-4">--}}
-{{--            Another <strong>Mojo Impact</strong><sup>&trade;</sup> Website--}}
-{{--        </p>--}}
-{{--       <p class="text-xs text-center">--}}
-{{--            &copy; copyright 2012 &mdash; {{ date('Y') }}--}}
-{{--            <a href="#" class="hover:underline">Mojo Impact LLC</a><br>--}}
-{{--             <span class="text-xs text-center">All Rights Reserved.</span>--}}
-{{--       </p>--}}
-
-{{--    </div>--}}
 </footer>
