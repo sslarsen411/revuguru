@@ -5,7 +5,7 @@
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com" class="flex items-center">
                     <div class="bg-amber-300 rounded-full mx-4">
-                        <img src="{{URL::asset("/images/review-guru-bust.png")}}" class="h-16 px-2 w-auto inline" alt="guru">
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="h-16 px-2 w-auto inline" alt="guru">
                     </div>
                     <span class="self-center text-2xl text-amber-500 font-semibold whitespace-nowrap ">
                         The Rave Review Guru
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-amber-700 sm:mx-auto  lg:my-8" />
+        <hr class="my-6 border-amber-500 sm:mx-auto  lg:my-8" />
         <div class="sm:flex sm:items-center sm:flex-col sm:justify-between">
             <p class="text-sm text-center mt-4 text-amber-500">
                 Another <strong>Mojo Impact</strong><sup>&trade;</sup> Website
@@ -78,3 +78,10 @@
         </div>
     </div>
 </footer>
+<button title="Scroll back to the top" id="btnScrollToTop" class="btnScrollToTop btn">
+    <div class="flex flex-col place-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+        </svg>
+    </div>
+</button>

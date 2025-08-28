@@ -10,12 +10,13 @@
         @stack('styles') {{-- For page-specific styles --}}
         <link rel="icon" href="/images/favicon.svg" type="images/svg+xml"/>
     </head>
-    <body class="font-sans text-gray-900 antialiased h-screen">
+    <body class="text-gray-900 antialiased h-screen">
         <x-header />
         <!-- Start Content -->
         {{ $slot }}
         <!-- End Content -->
         <x-footer />
+        @stack('scripts')
         @vite('resources/js/app.js')
         @livewireScripts
     </body>

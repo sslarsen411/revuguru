@@ -17,36 +17,35 @@
                 </p>
             </div>
             <div class="hidden md:col-span-5 md:mt-0 md:flex">
-                <img class="h-48" src="{{URL::asset("/images/guru-with-mirror.png")}}" alt="guru">
+                <img class="h-48" src="{{URL::asset("https://cdn.mojoimpact.com/rrg/guru-with-mirror.webp")}}" alt="guru">
             </div>
         </div>
     </section>
-
-    <section >
+    <section class="max-w-screen-xl mx-auto " >
         <div>
-            <h2 class="ml-12">Meet the Team</h2>
+            <h2 class="text-2xl mb-8">Meet the Team</h2>
         </div>
         <div class="multi__col ">
             <div class="multi__col-div">
-                <h3>Scott Larsen</h3>
+                <h3 class="text-xl">Scott Larsen</h3>
+                <h4>The Rave Review Guru</h4>
                 <img src="{{URL::asset("https://cdn.mojoimpact.com/sslc/scott-larsen.webp")}}"  alt="Scott Larsen"
                      class="max-h-72 rounded-lg shadow-2xl pt-8" />
-                <p class="max-w-[50ch] pt-8">
+                <p class="max-w-[50ch] pt-8 mb-5">
                     For over 30 years, Scott Larsen has helped small business owners with software solutions to
-                    eliminate friction.
+                    boost revenue and grow their business.
                 </p>
                 <p class="max-w-[50ch] pb-8">
-                    Scott has lived in worked in Sonoma, California since the Nixon administration.
+                    Scott has lived in Sonoma, California since the Johnson administration (Lyndon, not Andrew).
                 </p>
             </div>
             <div class="multi__col-div">
-                <h3>Bucky</h3>
+                <h3 class="text-xl">Bucky</h3>
+                <h4>The Dog</h4>
                 <img src="https://cdn.mojoimpact.com/sslc/bucky-debugging-code-256.webp" alt="Buck debugging some code"
                      class="max-h-72 rounded-lg shadow-2xl pt-8" />
                 <p class="py-8">Bucky is the company mascot and chief programmer. He works for treats.</p>
-
             </div>
         </div>
-
     </section>
 </x-app-layout>

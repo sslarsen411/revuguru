@@ -1,102 +1,393 @@
 <x-app-layout>
-    <section class="grid grid-cols-1 md:grid-cols-12 h-[50dvh] place-items-center"
-    style="background-image: url('{{URL::asset("/images/bg.png")}}'); background-size: cover; background-position: top; "    >
-        <div class="p-4 text-left md:col-span-7">
-            <div class="mr-auto bg-zinc-100/90 lg:col-span-7 p-8 md:shadow-lg  place-self-center ">
-                <h1 class="tracking-tight font-semibold text-slate-600 text-balance ">
-                    <span class="block text-3xl mt-12">The Rave Review Guru says &ldquo;Let&apos;s face it&hellip; </span>
+    <section class="grid grid-cols-1 md:grid-cols-12 h-[70dvh] place-items-center mb-8 bg-none md:bg-hero bg-cover bg-no-repeat bg-right"  >
+        <div class="col-span-12 hidden md:block md:col-span-2">
+            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/greeting-guru.webp")}}" alt="greeting guru"
+                 class="h-full w-auto mx-auto" />
+        </div>
+        <div class="col-span-12 md:col-span-5 bg-zinc-100/90 p-8 md:shadow-lg self-center justify-self-start">
+            <h1 class="tracking-tight font-semibold text-slate-600 text-balance ">
+                <span class="block text-lg md:text-xl lg:text-2xl mt-12">The Rave Review Guru says &ldquo;Let&apos;s face it&hellip; </span>
 
-                    <span class="text-4xl leading-normal block mt-6 text-nowrap text-red-800 ">
+                <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug block mt-6 text-red-800 break-words">
                         Customer reviews are  giant pain in the @$$!
                     </span>
-
-                </h1>
-                <h2 class="text-2xl my-6 text-slate-600">
-                    I can show you a <strong><em>better</em></strong> way.
-                </h2>
-                <x-primary-button class="mr-3">
-                    Find out now
-                </x-primary-button>
-
+            </h1>
+            <h2 class="text-2xl my-6 text-slate-600">
+                There&apos;s a <strong><em>better</em></strong> way&hellip;
+            </h2>
+            <div class="flex place-items-center w-1/2 ">
+                <button type="button" id="goToVsl"
+                        class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none
+                        bg-rust rounded-lg border border-gray-200 hover:bg-red-400 hover:text-gray-600
+                        focus:z-10 focus:ring-4 focus:ring-gray-100  mx-auto">
+                    Discover how!
+                </button>
             </div>
-
-
-        </div>
-        <div class="p-4 place-self-end text-center hidden md:block md:col-span-5">
-            <img class="h-auto w-[70%]" src="{{URL::asset("/images/pia.png")}}" alt="pain in the ass">
         </div>
     </section>
-
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 place-items-center p-4 mt-4 ">
-        <div class="bg-white p-8 rounded-lg text-center place-self-end md:col-span-5">
-{{--            <img class="w-[50%] scale-x-[-1]" src="{{URL::asset("/images/gesture.png")}}" alt="guru">--}}
-            <div class="max-w-screen-md mb-8 lg:mb-16 text-left">
-                <h2 class="mb-4 text-4xl tracking-tight text-center font-semibold text-gray-900">
-                    Turn praise into <span class="text-red-900 font-extrabold">profit</span>
-                </h2>
-                <p class="text-gray-500 sm:text-xl mb-5 ">
-                    Many business owners struggle to stand out online because they don’t have enough reviews&hellip;
-                    and no idea how to get them!
-                </p>
-                <p class="text-gray-500 sm:text-xl mb-5">
-
-                I will show you how to spark a steady flow of customer reviews using psychology and AI, turning an awkward
-                    ask into a quick, feel-good favor.
-                </p>
-            </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0 text-left">
-                <div>
-                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    </div>
-                    <h3 class="text-center mb-2 text-xl font-bold dark:text-white">
-                        Review Collection
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        The Rave Review Guru gives the incentive that's been missing from the process for so long.
-                        Imagine, customers eager to write a review for your business.
-
+    <!-- CTA 1 -->
+    <section id="book_appt" class="bg-zinc-950 text-zinc-50 shadow-lg">
+        <div class="two__col two__col-pic-l p-8 md:p-0">
+            <div class="flex flex-col flex-wrap items-between w-full md:w-1/2">
+                <div class="w-full md:w-3/4 p-4">
+                    <h2 class="text-xl md:text-5xl max-w-[24ch] font-bold">
+                        Turn praise into <span class="text-amber-500 font-extrabold">profit</span>
+                    </h2>
+                    <p class="py-6 text-base md:text-lg lg:text-2xl">
+                        Book a
+                        <span class="font-semibold text-amber-500">
+                            free
+                        </span>
+                        no-pitch, no-obligation &frac12; hour consultation to discover how to outrank competitors with the
+                        review strategy they <em>wish</em> they had.
+                        <a  href="https://www.sslarsenconsulting.com/calendar" class="text-red-700 hover:text-red-400" target="_blank" title="Main site">
+                            Book now.
+                        </a>
                     </p>
                 </div>
-                <div>
-                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+            </div>
+            <div class="flex flex-col w-full md:w-1/2 py-2">
+                <div class="w-full bg-zinc-100 rounded-3xl p-2 ">
+                    <div class="form-control mt-6 text-center">
+                        <h3 class="text-xl md:text-2xl lg:text-4xl text-slate-700 font-bold ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 inline  w-auto" viewBox="0 0 24 24">
+                                <path fill="text-slate-800" d="M4 21V5h3.385V2.77h1.077V5h7.154V2.77h1V5H20v6.616h-1v-1H5V20h6.846v1zM5 9.615h14V6H5zm0 0V6zM14.23 21v-2.21l5.96-5.934l2.19 2.204L16.44 21zm6.886-5.94l-.925-.945zm-6 5.056h.95l3.467-3.474l-.47-.475l-.455-.488l-3.492 3.486zm3.948-3.949l-.456-.488l.925.963z" />
+                            </svg>
+                            Book a
+                            <span class="font-semibold text-amber-500">
+                                free
+                            </span> &frac12; hour consultation now.</h3>
+                        <div class="px-4 pt-3 pb-4">
+                            <a type="button" href="https://www.sslarsenconsulting.com/calendar" target="_blank"
+                               class="bg-red-500 hover:bg-red-400 px-4 py-2 rounded-3xl hover:animate-pulse">
+                                Book Now
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="text-center mb-2 text-xl font-bold dark:text-white">
-                        Feedback Response
-                        </h3>
-                    <p class="text-gray-500 dark:text-gray-400">Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you.</p>
                 </div>
-                <div>
-                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">
-                        Tracking and Analysis
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</p>
-                </div>
-                <div>
-                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">
-                        All Automatically Done
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">Audit-proof software built for critical financial operations like month-end close and quarterly budgeting.</p>
-                </div>
-
             </div>
         </div>
-        <div class=" text-center md:col-span-7">
-            <video class="h-full w-full rounded-lg" controls mr-8>
-                <source
-                    src="{{URL::asset("/images/welcome.mp4")}}"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    </section>
+    <!-- Trust block --> <!-- Trust block END -->
+    <!-- VSL block -->
+    <section id="vsl" class="grid grid-cols-1 md:grid-cols-12 gap-4 place-items-center p-4 mt-16 ">
+        <div class="bg-white p-8 rounded-lg text-center  md:col-span-5">
+{{--            <img class="w-[50%] scale-x-[-1]" src="{{URL::asset("/images/gesture.png")}}" alt="guru">--}}
+            <div class="max-w-screen-md  text-left font-semibold">
+                <h2 class="mb-4 text-4xl tracking-tight text-center font-semibold text-red-900">
+                    Dominate Your Market
+                </h2>
+                <p class="text-gray-500 sm:text-xl mb-5 ">
+                    Many business owners <strong>struggle</strong> to <strong>stand out</strong> from their competitors
+                    because they don’t have enough reviews&hellip; and <strong>no idea</strong> how to get them!
 
-    </div>
+                </p>
+                <p class="text-gray-500 sm:text-xl mb-5">
+                    The <span class="text-amber-500 font-bold">Rave Review Guru</span> has the tactics and techniques to spark a
+                    <strong>steady flow of fresh customer reviews</strong> every week.
+                </p>
+                <p class="text-gray-500 sm:text-xl mb-5">
+                    Imagine your business flourishing with a <strong>consistent flow</strong> of positive reviews
+                    boosting your visibility and sales!
+                </p>
+            </div>
+            <div class="font-semibold text-2xl text-red-800 text-right">
+                <p> Watch this video to learn more →</p>
+            </div>
+        </div>
+        <div class=" text-center md:col-span-7 place-content-center w-full" >
+            <video class="hidden" ></video>
+            <!-- ====== Video Control Start https://tailgrids.com/components/videos -->
+            <div x-data="{ videoOpen: false, videoSrc: ''}" >
+                <div class="mx-auto">
+                    <div class="-mx-4 flex flex-wrap justify-center">
+                        <div class="w-full px-4 lg:w-10/12 border-2 border-zinc-200 rounded-lg shadow-lg">
+                            <div class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px] p-2">
+                                <h2>Why? Find out!</h2>
+                                <div class="absolute right-0 top-0 h-auto w-1/2">
+                                    <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/gesture.png")}}" alt="image"
+                                         class="h-full w-full object-cover object-center" />
+                                </div>
+                                <div class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary/90">
+                                    <a href="javascript:void(0)"
+                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/welcome.mp4")}}' "
+                                       class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-teal-700/80 text-primary md:h-[100px] md:w-[100px] dark:bg-dark-2 dark:text-white">
+                                        <span class="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white/20 delay-300 duration-1000">     </span>
+                                        <svg width="23" height="27" viewBox="0 0 23 27"  xmlns="http://www.w3.org/2000/svg"
+                                             class="ml-1 fill-current">
+                                            <path
+                                                d="M22.5 12.634C23.1667 13.0189 23.1667 13.9811 22.5 14.366L2.25 26.0574C1.58333 26.4423 0.750001 25.9611 0.750001 25.1913L0.750002 1.80866C0.750002 1.03886 1.58334 0.557731 2.25 0.942631L22.5 12.634Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div x-show="videoOpen" x-transition
+                     class="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center bg-black/70">
+                    <div @click.outside="videoOpen = false; videoSrc=''" class="mx-auto w-full max-w-[550px] bg-white">
+                        <iframe id="video" class="h-[320px] w-full" x-bind:src="videoSrc">
+                        </iframe>
+                    </div>
+                    <button @click="videoOpen = false; videoSrc='' "
+                            class="absolute right-0 top-0 flex h-20 w-20 cursor-pointer items-center justify-center text-body-color hover:bg-black">
+                        <svg viewBox="0 0 16 15" class="h-8 w-8 fill-current">
+                            <path
+                                d="M3.37258 1.27L8.23258 6.13L13.0726 1.29C13.1574 1.19972 13.2596 1.12749 13.373 1.07766C13.4864 1.02783 13.6087 1.00141 13.7326 1C13.9978 1 14.2522 1.10536 14.4397 1.29289C14.6272 1.48043 14.7326 1.73478 14.7326 2C14.7349 2.1226 14.7122 2.24439 14.6657 2.35788C14.6193 2.47138 14.5502 2.57419 14.4626 2.66L9.57258 7.5L14.4626 12.39C14.6274 12.5512 14.724 12.7696 14.7326 13C14.7326 13.2652 14.6272 13.5196 14.4397 13.7071C14.2522 13.8946 13.9978 14 13.7326 14C13.6051 14.0053 13.478 13.984 13.3592 13.9375C13.2404 13.8911 13.1326 13.8204 13.0426 13.73L8.23258 8.87L3.38258 13.72C3.29809 13.8073 3.19715 13.8769 3.08559 13.925C2.97402 13.9731 2.85405 13.9986 2.73258 14C2.46737 14 2.21301 13.8946 2.02548 13.7071C1.83794 13.5196 1.73258 13.2652 1.73258 13C1.73025 12.8774 1.753 12.7556 1.79943 12.6421C1.84586 12.5286 1.91499 12.4258 2.00258 12.34L6.89258 7.5L2.00258 2.61C1.83777 2.44876 1.74112 2.23041 1.73258 2C1.73258 1.73478 1.83794 1.48043 2.02548 1.29289C2.21301 1.10536 2.46737 1 2.73258 1C2.97258 1.003 3.20258 1.1 3.37258 1.27Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- ====== Video Section End -->
+        </div>
+    </section>
+    <!-- Pain/Solution block -->
+    <section class="mx-auto max-w-7xl px-4 py-16">
+        <header class="mb-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight">Rave Review Guru Solution</h2>
+            <p class="mt-2 text-sm block md:hidden text-gray-600">Tap a card to flip.</p>
+        </header>
+        <!-- Card Grid -->
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+            <!-- Card 1 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="group card_group">
+                <div class="card__body">
+                    <!-- Front -->
+                    <div class="card__body-div card__front">
+                        <h3 class="text-2xl md:text-2xl text-center mb-5">
+                            The Review Process Sucks
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p class="text-sm text-center mb">
+                            &ldquo;Is it even worth it?&rdquo;
+                        </p>
+                        <p>
+                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                        </p>
+                    </div>
+                    <!-- Back -->
+                    <div class="card__body-div card__back">
+                        <h3 class="text-2xl md:text-2xl text-center">
+                            Eliminate the Hassle
+                        </h3>
+                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
+                             alt="A message falling on dear ears">
+                        <p>
+                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                        </p>
+                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA 2 -->
+    <section class="bg-zinc-950 text-zinc-50 shadow-lg">
+        <div class="two__col two__col-pic-l p-8 md:p-0">
+            <div class="flex flex-col w-full md:w-1/2 py-2">
+                <div class="w-3/4 bg-zinc-100 rounded-3xl p-2 ">
+                    <div class="form-control mt-6 text-center">
+                        <h3 class="text-xl md:text-2xl lg:text-4xl text-slate-700 font-bold ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 inline  w-auto" viewBox="0 0 24 24">
+                                <path fill="text-slate-800" d="M4 21V5h3.385V2.77h1.077V5h7.154V2.77h1V5H20v6.616h-1v-1H5V20h6.846v1zM5 9.615h14V6H5zm0 0V6zM14.23 21v-2.21l5.96-5.934l2.19 2.204L16.44 21zm6.886-5.94l-.925-.945zm-6 5.056h.95l3.467-3.474l-.47-.475l-.455-.488l-3.492 3.486zm3.948-3.949l-.456-.488l.925.963z" />
+                            </svg>
+                            Book a
+                            <span class="font-semibold text-amber-500">
+                                free
+                            </span> &frac12; hour consultation now.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap items-between w-full md:w-1/2">
+                <div class="w-full md:w-3/4 p-4">
+                    <h2 class="text-xl md:text-4xl font-semibold">
+                       Make your business shine
+                    </h2>
+                    <p class="py-6 text-base md:text-lg lg:text-2xl">
+                        Book a
+                        <span class="font-semibold text-amber-500">
+                            free
+                        </span>
+                        no-pitch, no-obligation &frac12; hour consultation to spark a steady flow of reviews
+                        <a  href="https://www.sslarsenconsulting.com/calendar" class="text-red-700 hover:text-red-400" target="_blank" title="Main site">
+                            Book now.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const targetEl = document.getElementById('vsl');
+        const clickTrigger = document.getElementById('goToVsl');
+        clickTrigger.addEventListener('click', () => {
+            targetEl.scrollIntoView({
+                behavior: 'smooth', // Optional: for smooth scrolling animation
+                block: 'start'      // Optional: aligns the top of the element to the top of the viewport
+            });
+        });
+    </script>
 </x-app-layout>
