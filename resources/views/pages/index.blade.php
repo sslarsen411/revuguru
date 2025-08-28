@@ -105,7 +105,7 @@
                             <div class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px] p-2">
                                 <h2>Why? Find out!</h2>
                                 <div class="absolute right-0 top-0 h-auto w-1/2">
-                                    <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/gesture.png")}}" alt="image"
+                                    <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/gesture.webp")}}" alt="image"
                                          class="h-full w-full object-cover object-center" />
                                 </div>
                                 <div class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary/90">
