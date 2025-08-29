@@ -13,14 +13,14 @@
                     </span>
             </h1>
             <h2 class="text-2xl my-6 text-slate-600">
-                There&apos;s a <strong><em>better</em></strong> way&hellip;
+                But, there&apos;s a <strong><em>better</em></strong> way&hellip;
             </h2>
             <div class="flex place-items-center w-1/2 ">
                 <button type="button" id="goToVsl"
                         class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none
                         bg-rust rounded-lg border border-gray-200 hover:bg-red-400 hover:text-gray-600
                         focus:z-10 focus:ring-4 focus:ring-gray-100  mx-auto">
-                    Discover how!
+                    Discover It Now!
                 </button>
             </div>
         </div>
@@ -101,9 +101,9 @@
             <div x-data="{ videoOpen: false, videoSrc: ''}" >
                 <div class="mx-auto">
                     <div class="-mx-4 flex flex-wrap justify-center">
-                        <div class="w-full px-4 lg:w-10/12 border-2 border-zinc-200 rounded-lg shadow-lg">
+                        <div class="w-full px-4 lg:w-10/12 border-2 border-zinc-200 rounded-lg shadow-lg bg-gray-800">
                             <div class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px] p-2">
-                                <h2>Why? Find out!</h2>
+                                <h2 class="text-2xl text-zinc-50 ">Find out how!</h2>
                                 <div class="absolute right-0 top-0 h-auto w-1/2">
                                     <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/gesture.webp")}}" alt="image"
                                          class="h-full w-full object-cover object-center" />
@@ -143,202 +143,227 @@
         </div>
     </section>
     <!-- Pain/Solution block -->
-    <section class="mx-auto max-w-7xl px-4 py-16">
-        <header class="mb-8 text-center">
-            <h2 class="text-3xl font-bold tracking-tight">Rave Review Guru Solution</h2>
-            <p class="mt-2 text-sm block md:hidden text-gray-600">Tap a card to flip.</p>
-        </header>
-        <!-- Card Grid -->
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-            <!-- Card 1 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
-                    </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
-                    </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+    <section class="mx-auto px-4 py-16 bg-gray-200 mb-8">
+        <div class="max-w-7xl mx-auto">
+            <header class="mb-8 text-center">
+                <h2 class="text-3xl font-bold tracking-tight">Rave Review Guru Solutions</h2>
+                <p class="mt-2 text-sm block md:hidden text-gray-600">Tap a card to flip.</p>
+            </header>
+            <!-- Card Grid -->
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+                <!-- Card 1 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                                <h3 >
+                                    Reviews are a giant Hassle
+                                </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                            </p>
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3>
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p>Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
-                    </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 1 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
-                    </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                <!-- Card 2 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                            <h3 >
+                                Customer Apathy
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                To customers, reviews are <strong>too</strong> much work with <strong>no</strong> real reward.
+                            </p>
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3>
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p>Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
-                    </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                <!-- Card 3 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                            <h3>
+                               Request Fatigue
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                Every business wants a review and people are tired of the constant impersonal requests
+                            </p>
+                            <p>
+                               Plus, businesses often wait too long before asking and their email or text
+                                messages are easily ignored.
+                            </p>
+
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3 class="text-2xl md:text-2xl text-center">
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="group card_group">
-                <div class="card__body">
-                    <!-- Front -->
-                    <div class="card__body-div card__front">
-                        <h3 class="text-2xl md:text-2xl text-center mb-5">
-                            The Review Process Sucks
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p class="text-sm text-center mb">
-                            &ldquo;Is it even worth it?&rdquo;
-                        </p>
-                        <p>
-                            Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
-                        </p>
+                <!-- Card 4 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                            <h3 >
+                                Reviews are a giant Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                            </p>
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3>
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p>Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
                     </div>
-                    <!-- Back -->
-                    <div class="card__body-div card__back">
-                        <h3 class="text-2xl md:text-2xl text-center">
-                            Eliminate the Hassle
-                        </h3>
-                        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}" class="max-h-16 mx-auto mb-2"
-                             alt="A message falling on dear ears">
-                        <p>
-                            You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
-                        </p>
-                        <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
-                            <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                            <h3 >
+                                Reviews are a giant Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                            </p>
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3>
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p>Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="group card_group">
+                    <div class="card__body">
+                        <!-- Front -->
+                        <div class="card__body-div card__front">
+                            <h3 >
+                                Reviews are a giant Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
+                                     alt="Pain">
+                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                            </p>
+                        </div>
+                        <!-- Back -->
+                        <div class="card__body-div card__back">
+                            <h3>
+                                Eliminate the Hassle
+                            </h3>
+                            <figure>
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                     alt="Guru">
+                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
+                            </figure>
+                            <p>
+                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                            </p>
+                            <p>Rave Review Guru makes the process <em>fast</em> and
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                        </div>
                     </div>
                 </div>
             </div>

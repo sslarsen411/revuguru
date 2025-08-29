@@ -73,18 +73,34 @@
     @apply flex flex-col place-items-center;
 }
 .card_group {
-    @apply relative h-64 perspective-[1200px];
+    @apply relative h-96 perspective-[1200px];
 }
 .card__body {
     @apply  relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d]
     group-hover:[transform:rotateY(180deg)] group-focus-within:[transform:rotateY(180deg)];
 }
 .card__body-div {
-    @apply flex flex-col place-items-center;
+    @apply flex flex-col items-center justify-start  text-center h-full;
 }
+.card__body-div h3{
+    @apply text-lg md:text-xl text-center mb-5;
+}
+.card__body-div p:first-of-type{
+    @apply pt-8 mb-4;
+}
+.card__body-div p{
+    @apply  mb-4;
+}
+.card__body-div img{
+    @apply max-h-16 mx-auto mb-2;
+}
+.card__body-div figcaption{
+    @apply text-sm text-center mb-5;
+}
+
 .card__front,
 .card__back{
-    @apply absolute inset-0 shadow-xl;
+    @apply absolute inset-0 shadow-xl text-left;
 }
 .card__front{
     @apply overflow-hidden rounded-2xl bg-gradient-to-br from-stone-50 to-stone-200 p-6  [backface-visibility:hidden];
