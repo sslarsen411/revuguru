@@ -78,6 +78,7 @@
         </div>
     </div>
 </footer>
+<script>fetch("https://guru.ravereview.guru/api/get-navbot",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chatbotId:"686c4c1d0b363875086c2d6e",url:`${window.location.href}`,embedSource:"script"})}).then(function(e){if(200===e.status)return e.text();throw new Error("Error fetching data, status code: "+e.status)}).then(function(e){var t=document.createElement("script");t.innerHTML=e,document.body.appendChild(t)}).catch(function(e){console.error("Fetch error: ",e)});</script>
 <button title="Scroll back to the top" id="btnScrollToTop" class="btnScrollToTop btn">
     <div class="flex flex-col place-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">

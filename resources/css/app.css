@@ -83,7 +83,7 @@
     @apply flex flex-col items-center justify-start  text-center h-full;
 }
 .card__body-div h3{
-    @apply text-lg md:text-xl text-center mb-5;
+    @apply text-lg md:text-xl text-center text-red-500 mb-5;
 }
 .card__body-div p:first-of-type{
     @apply pt-8 mb-4;

@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Calendar;
 use Illuminate\Support\Facades\Route;
 
 //Route::get('/', function () {
@@ -11,4 +12,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
-
+//Route::get('/calendar', function () {
+//    return view('pages.calendar');
+//})->name('calendar');
+Route::get('/calendar', Calendar::class);

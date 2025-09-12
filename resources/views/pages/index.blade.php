@@ -40,8 +40,8 @@
                         </span>
                         no-pitch, no-obligation &frac12; hour consultation to discover how to outrank competitors with the
                         review strategy they <em>wish</em> they had.
-                        <a  href="https://www.sslarsenconsulting.com/calendar" class="text-red-700 hover:text-red-400" target="_blank" title="Main site">
-                            Book now.
+                        <a  href="/calendar" class="text-amber-700 hover:text-red-400" target="_blank" title="Link to calendar">
+                            Book now away.
                         </a>
                     </p>
                 </div>
@@ -58,7 +58,7 @@
                                 free
                             </span> &frac12; hour consultation now.</h3>
                         <div class="px-4 pt-3 pb-4">
-                            <a type="button" href="https://www.sslarsenconsulting.com/calendar" target="_blank"
+                            <a type="button" href="/calendar" wire:navigate target="_blank"
                                class="bg-red-500 hover:bg-red-400 px-4 py-2 rounded-3xl hover:animate-pulse">
                                 Book Now
                             </a>
@@ -74,25 +74,40 @@
         <div class="bg-white p-8 rounded-lg text-center  md:col-span-5">
 {{--            <img class="w-[50%] scale-x-[-1]" src="{{URL::asset("/images/gesture.png")}}" alt="guru">--}}
             <div class="max-w-screen-md  text-left font-semibold">
-                <h2 class="mb-4 text-4xl tracking-tight text-center font-semibold text-red-900">
-                    Dominate Your Market
-                </h2>
-                <p class="text-gray-500 sm:text-xl mb-5 ">
-                    Many business owners <strong>struggle</strong> to <strong>stand out</strong> from their competitors
-                    because they don’t have enough reviews&hellip; and <strong>no idea</strong> how to get them!
+{{--                <h2 class="mb-4 text-4xl tracking-tight text-center font-semibold text-red-900">--}}
+{{--                    Dominate Your Market--}}
+{{--                </h2>--}}
+{{--                <p class="text-gray-500 sm:text-xl mb-5 ">--}}
+{{--                    Many business owners <strong>struggle</strong> to <strong>stand out</strong> from their competitors--}}
+{{--                    because they don’t have enough reviews&hellip; and <strong>no idea</strong> how to get them!--}}
 
+{{--                </p>--}}
+{{--                <p class="text-gray-500 sm:text-xl mb-5">--}}
+{{--                    The <span class="text-amber-500 font-bold">Rave Review Guru</span> has the tactics and techniques to spark a--}}
+{{--                    <strong>steady flow of fresh customer reviews</strong> every week.--}}
+{{--                </p>--}}
+{{--                <p class="text-gray-500 sm:text-xl mb-5">--}}
+{{--                    Imagine your business flourishing with a <strong>consistent flow</strong> of positive reviews--}}
+{{--                    boosting your visibility and sales!--}}
+{{--                </p>--}}
+                <h2  class="mb-6 text-5xl tracking-tight text-center font-semibold text-red-500" >
+                    Stop begging for stars!
+                </h2>
+                <h3 class="mb-4 text-2xl tracking-tight text-center font-semibold text-stone-700 italic">
+                    What if the secret to more reviews&hellip;<br> was to <span class="text-red-700 font-bold">stop</span> chasing them?
+                </h3>
+                <p class="text-gray-500 sm:text-xl mb-5 text-pretty">
+                    Is your business unknowingly <strong>sabotaging</strong> your review efforts?
                 </p>
-                <p class="text-gray-500 sm:text-xl mb-5">
-                    The <span class="text-amber-500 font-bold">Rave Review Guru</span> has the tactics and techniques to spark a
-                    <strong>steady flow of fresh customer reviews</strong> every week.
+                <p class="text-gray-500 sm:text-xl mb-5 text-pretty">
+                    The very tactics your rely on to collect reviews are what <strong>shut customers down cold</strong>!
                 </p>
-                <p class="text-gray-500 sm:text-xl mb-5">
-                    Imagine your business flourishing with a <strong>consistent flow</strong> of positive reviews
-                    boosting your visibility and sales!
+                <p class="text-gray-500 sm:text-xl mb-5 text-pretty">
+                    But there’s a smarter, simpler way &mdash; <strong>The Review Ripple Effect</strong>
                 </p>
             </div>
             <div class="font-semibold text-2xl text-red-800 text-right">
-                <p> Watch this video to learn more →</p>
+                <p> Watch this short  2&half; minute video to see how it works. →</p>
             </div>
         </div>
         <div class=" text-center md:col-span-7 place-content-center w-full" >
@@ -103,14 +118,18 @@
                     <div class="-mx-4 flex flex-wrap justify-center">
                         <div class="w-full px-4 lg:w-10/12 border-2 border-zinc-200 rounded-lg shadow-lg bg-gray-800">
                             <div class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px] p-2">
-                                <h2 class="text-2xl text-zinc-50 ">Find out how!</h2>
+                                <div class="flex flex-col items-center justify-center h-full w-1/2 ">
+                                    <p class="text-zinc-50 text-5xl tracking-tight leading-12 w-[10ch]">
+                                        The Review Ripple Effect
+                                    </p>
+                                </div>
                                 <div class="absolute right-0 top-0 h-auto w-1/2">
                                     <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/gesture.webp")}}" alt="image"
                                          class="h-full w-full object-cover object-center" />
                                 </div>
                                 <div class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary/90">
                                     <a href="javascript:void(0)"
-                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/welcome.mp4")}}' "
+                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/WS-video.mp4")}}' "
                                        class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-teal-700/80 text-primary md:h-[100px] md:w-[100px] dark:bg-dark-2 dark:text-white">
                                         <span class="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white/20 delay-300 duration-1000">     </span>
                                         <svg width="23" height="27" viewBox="0 0 23 27"  xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +219,13 @@
                                 <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
                             </figure>
                             <p>
-                                To customers, reviews are <strong>too</strong> much work with <strong>no</strong> real reward.
+                                To your customers reviews feel like a homework assignment. They&apos;re seen as
+                                an <strong>unwanted chore</strong>.
+                            </p>
+                            <p>
+                                Simply put, reviews are
+                                <strong>too</strong> much work with <strong>no</strong> real reward, so they
+                                ignore your requests.
                             </p>
                         </div>
                         <!-- Back -->
@@ -235,12 +260,13 @@
                                 <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
                             </figure>
                             <p>
-                                Every business wants a review and people are tired of the constant impersonal requests
+                                Every business wants a review. As a result, customers are overwhelmed
+                                with automated reviews requests filling their inboxes and they just tune out.
                             </p>
-                            <p>
-                               Plus, businesses often wait too long before asking and their email or text
-                                messages are easily ignored.
-                            </p>
+{{--                            <p>--}}
+{{--                               Plus, businesses often wait too long before asking and their email or text--}}
+{{--                                messages are easily ignored.--}}
+{{--                            </p>--}}
 
                         </div>
                         <!-- Back -->
@@ -267,7 +293,7 @@
                         <!-- Front -->
                         <div class="card__body-div card__front">
                             <h3 >
-                                Reviews are a giant Hassle
+                                Damned if You Do or Don&apos;t
                             </h3>
                             <figure>
                                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
@@ -275,13 +301,14 @@
                                 <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
                             </figure>
                             <p>
-                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                                One negative review could tank your reputation overnight. But a lack of a consistent
+                                flow of reviews can also tank your business
                             </p>
                         </div>
                         <!-- Back -->
                         <div class="card__body-div card__back">
                             <h3>
-                                Eliminate the Hassle
+                                Damned if You Do or Don&apos;t
                             </h3>
                             <figure>
                                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
@@ -289,7 +316,8 @@
                                 <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
                             </figure>
                             <p>
-                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                                One negative review could tank your reputation overnight. But a lack of a consistent
+                                flow of reviews can also tank your business
                             </p>
                             <p>Rave Review Guru makes the process <em>fast</em> and
                                 <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
@@ -302,7 +330,7 @@
                         <!-- Front -->
                         <div class="card__body-div card__front">
                             <h3 >
-                                Reviews are a giant Hassle
+                                Ignorance
                             </h3>
                             <figure>
                                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
@@ -310,7 +338,8 @@
                                 <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
                             </figure>
                             <p>
-                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                                Most owners, staff, and customers are all equally clueless about how to write
+                                a polished review. It&apos;s the blind leading the blind.
                             </p>
                         </div>
                         <!-- Back -->
@@ -337,7 +366,7 @@
                         <!-- Front -->
                         <div class="card__body-div card__front">
                             <h3 >
-                                Reviews are a giant Hassle
+                                Asking Wrong or Not at All
                             </h3>
                             <figure>
                                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-256.webp")}}"
@@ -345,7 +374,12 @@
                                 <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>
                             </figure>
                             <p>
-                                Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
+                                Businesses often wait too long before asking and their email or text
+                                messages are easily ignored.
+                            </p>
+                            <p>
+                                Or they don&apos;t ask at all and simply wish and hope that their customers
+                                will spontaneously decide to write a review
                             </p>
                         </div>
                         <!-- Back -->
@@ -405,6 +439,7 @@
             </div>
         </div>
     </section>
+
     <script>
         const targetEl = document.getElementById('vsl');
         const clickTrigger = document.getElementById('goToVsl');

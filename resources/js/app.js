@@ -1,5 +1,5 @@
 import './bootstrap';
-
+const ToggleRatio    = 0.10
 const rootEle        = document.documentElement
 const scrollToTopBtn = document.querySelector("#btnScrollToTop")
 const handleScroll = () => {
