@@ -169,7 +169,7 @@
                 Want help setting up a first-party review capture system and “Evidence Library” that feeds your website, social, and sales? Book a free, no-pitch 30-minute consult.
             </p>
             <div class="mt-4">
-                <a href="#book" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-white font-semibold hover:bg-amber-700">
+                <a href="/calendar" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-white font-semibold hover:bg-amber-700">
                     Book a Free Consult
                 </a>
             </div>

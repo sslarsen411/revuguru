@@ -21,11 +21,6 @@ Route::get('/contact', function () {
 Route::get('/lp', function () {
     return view('pages.lp');
 })->name('lp');
-
-Route::get('/audit', function () {
-    return view('pages.audit');
-})->name('blowjob');
-
 Route::get('/solutions', function () {
     return view('pages.solutions');
 })->name('solutions');
