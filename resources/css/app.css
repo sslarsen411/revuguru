@@ -22,7 +22,8 @@
     --color-avocado-500: oklch(0.84 0.18 117.33);
     --color-avocado-600: oklch(0.53 0.12 118.34);
 
-    --background-image-hero: url('https://cdn.mojoimpact.com/rrg/bg2.webp');
+    --background-image-hero: url('https://cdn.mojoimpact.com/rrg/bg-img.webp');
+    --background-image-pia: url('https://cdn.mojoimpact.com/rrg/bg2.webp');
 }
 
 @layer base {
@@ -53,7 +54,23 @@
     h1, h2, h3, h4 {
         @apply font-poppins;
     }
+    p{
+        @apply text-pretty mb-5;
+    }
+    p:last-of-type{
+        @apply mb-0;
+    }
 }
+article p{
+    @apply text-base md:text-lg lg:text-xl;
+}
+article h2{
+    @apply text-xl md:text-2xl lg:text-3xl my-4 text-red-900;
+}
+article h3{
+    @apply text-lg md:text-xl lg:text-2xl text-shadow-stone-700 mb-2;
+}
+
 .two__col {
     @apply flex items-center flex-col  mx-auto max-w-screen-2xl;
 }
@@ -92,7 +109,7 @@
     @apply  mb-4;
 }
 .card__body-div img{
-    @apply max-h-16 mx-auto mb-2;
+    @apply max-h-24 w-auto mx-auto mb-2 rounded-2xl;
 }
 .card__body-div figcaption{
     @apply text-sm text-center mb-5;
@@ -108,12 +125,73 @@
 .card__back{
 @apply rounded-2xl bg-gradient-to-br from-slate-600 to-slate-900 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden];
 }
+.card__back h3{@apply text-amber-500;}
 .btnScrollToTop {
-    @apply w-10 h-10 rounded-4xl bg-rust/40 text-zinc-300/40 hover:text-zinc-50 z-50 fixed bottom-12 right-2 md:right-8 hover:animate-bounce hover:bg-red-800/90 transition-all duration-300 ease-in-out;
+    @apply w-10 h-10 rounded-4xl bg-rust/40 text-zinc-300/40 hover:text-zinc-50 z-50 fixed bottom-60 right-2 md:right-8 hover:animate-bounce hover:bg-red-800/90 transition-all duration-300 ease-in-out;
 }
 .btnScrollToTop svg {
     @apply w-3 h-3 inline-block  transition-all duration-300 ease-in-out;
 }
 .trade:after {
     @apply text-current -ml-2 align-top font-normal content-['\2122'];
+}
+#nav_menu {
+    @apply bg-zinc-50 lg:bg-transparent md:px-2 ml-auto lg:flex lg:justify-end md:space-x-2 absolute lg:relative
+    top-full left-0 w-1/2 mr-12 text-xl font-semibold;
+}
+#nav_menu a {
+    @apply flex md:inline-flex p-4 items-center w-full text-amber-700 hover:text-amber-500;
+}
+/*#nav_menu a:hover {*/
+/*    @apply text-amber-100;*/
+/*}*/
+.sub_menu--item {
+    @apply flex px-4 py-3;
+}
+.current{@apply !text-amber-400 hover:!text-amber-700;}
+.child {
+    @apply text-lg bg-zinc-50 shadow-lg rounded-lg text-black z-50 absolute left-24 lg:left-0 right-0
+    top-full w-[20rem]  md:shadow-lg border-2 border-orange-600;
+}
+.icon-arrow-down:before {
+    content: "\2193";
+}
+.icon-arrow-up:before {
+    content: "\2191";
+}
+.parent_nav + ul {
+    @apply opacity-0 invisible transition-all ease-in-out duration-500 delay-[4000ms];
+}
+.parent_nav:hover + ul {
+    @apply opacity-100 visible transition-all ease-in-out duration-1000 delay-0;
+}
+.parent_nav:hover .menu_icon {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
+.parent_nav .menu_icon {
+    transition: all 0.2s;
+    transition-delay: 2s;
+}
+/* Burger  */
+#burger_wrapper {
+    @apply block lg:hidden ml-auto my-auto p-4 cursor-pointer;
+}
+.burger_line {
+    @apply relative top-0 h-1 w-8 rounded-full bg-amber-100;
+}
+.group.open .group-open\:-top-2 {
+    @apply top-[-1rem];
+}
+.group.open .group-open\:rotate-45 {
+    @apply rotate-45;
+}
+.group.open .group-open\:-rotate-45 {
+    @apply -rotate-45;
+}
+.group.open .group-open\:opacity-0 {
+    @apply opacity-0;
+}
+.peer.open ~ .peer-open\:block {
+    @apply block;
 }

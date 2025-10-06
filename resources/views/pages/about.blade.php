@@ -48,5 +48,130 @@
             </div>
         </div>
     </section>
-    <div class="tidycal-embed" data-path="sslarsen411/30-minute-meeting-197lq0v"></div><script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+    <!-- About Us / Core Values — Rave Review Guru (Tailwind CSS) -->
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <!-- Header / Hero -->
+        <header class="mb-10">
+            <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
+                <span class="h-2 w-2 rounded-full bg-amber-600"></span>
+                About Rave Review Guru
+            </div>
+            <h1 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+                We don’t chase stars. We build trust.
+            </h1>
+            <p class="mt-4 text-lg text-slate-700">
+                Our tools are vehicles, not the destination. The real business is helping you turn customer reviews into a durable, owned marketing asset that powers growth across search, social, and sales.
+            </p>
+        </header>
+
+        <!-- Core Values -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900">Core Values</h2>
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <!-- Value 1 -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-lg font-semibold text-slate-900">1) A Tool Is Not a Business</h3>
+                    <p class="mt-2 text-slate-700">
+                        Software is a means, not the end. We don’t sell shiny gadgets—we help you unlock the full power of customer reviews as lasting assets.
+                    </p>
+                </article>
+                <!-- Value 2 -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-lg font-semibold text-slate-900">2) Own Your Praise</h3>
+                    <p class="mt-2 text-slate-700">
+                        Platforms rent you visibility on their terms. Your customer stories should live with you, ready to deploy wherever they convert best.
+                    </p>
+                </article>
+                <!-- Value 3 -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-lg font-semibold text-slate-900">3) Simplicity Wins</h3>
+                    <p class="mt-2 text-slate-700">
+                        Review collection should be natural, fast, and even fun—for customers, staff, and owners. We remove friction at every step.
+                    </p>
+                </article>
+                <!-- Value 4 -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-lg font-semibold text-slate-900">4) Authenticity Over Perfection</h3>
+                    <p class="mt-2 text-slate-700">
+                        Real, specific feedback beats a flawless average. Credibility comes from details, not just digits.
+                    </p>
+                </article>
+                <!-- Value 5 -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6 md:col-span-2">
+                    <h3 class="text-lg font-semibold text-slate-900">5) Turn Feedback Into Fuel</h3>
+                    <p class="mt-2 text-slate-700">
+                        A review isn’t the end of the journey—it’s the start of marketing momentum. We help you repurpose stories across web, social, ads, and sales.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Value Statements (Options) -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900">Value Statements</h2>
+            <p class="mt-2 text-slate-600">Choose the tone that fits your page. (You can rotate these or A/B test.)</p>
+
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <!-- Option A -->
+                <article class="rounded-xl border border-slate-200 bg-gradient-to-br from-amber-50 to-slate-50 p-6">
+                    <h3 class="text-base font-semibold text-slate-900">Option A — Direct &amp; Businesslike</h3>
+                    <p class="mt-2 text-slate-800">
+                        We help small businesses transform customer reviews into their most valuable marketing asset—owned, authentic, and working 24/7 to drive growth.
+                    </p>
+                </article>
+                <!-- Option B -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-base font-semibold text-slate-900">Option B — Punchy &amp; Memorable</h3>
+                    <p class="mt-2 text-slate-800">
+                        We don’t chase stars. We build trust. Our tools make reviews easy to collect, authentic to share, and powerful enough to future-proof your business.
+                    </p>
+                </article>
+                <!-- Option C -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6 md:col-span-2">
+                    <h3 class="text-base font-semibold text-slate-900">Option C — Inspirational &amp; Guide-like</h3>
+                    <p class="mt-2 text-slate-800">
+                        We free small businesses from chasing platforms and ratings. We help them own their praise, amplify their stories, and turn feedback into fuel for long-term success.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mission Statements (Variations) -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-900">Mission Statements</h2>
+            <div class="mt-6 grid gap-4 md:grid-cols-3">
+                <!-- Short & Simple -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-base font-semibold text-slate-900">Short &amp; Simple</h3>
+                    <p class="mt-2 text-slate-800">
+                        To help businesses maximize the value of their customer reviews.
+                    </p>
+                </article>
+                <!-- Expanded -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-base font-semibold text-slate-900">Expanded</h3>
+                    <p class="mt-2 text-slate-800">
+                        We empower small and medium businesses to take full control of reviews—making them simple to collect, authentic to share, and powerful to use—so they stand out, earn trust, and grow sustainably.
+                    </p>
+                </article>
+                <!-- Vision-Driven -->
+                <article class="rounded-xl border border-slate-200 bg-white p-6">
+                    <h3 class="text-base font-semibold text-slate-900">Vision-Driven</h3>
+                    <p class="mt-2 text-slate-800">
+                        We envision a world where reviews aren’t just platform ratings but lasting assets every business owns and leverages to thrive in social search and AI-driven discovery.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Signature Pull Quote -->
+        <figure class="my-10 rounded-xl border border-slate-200 bg-white p-6">
+            <blockquote class="text-xl font-semibold text-slate-900">
+                “Don’t build your reputation on rented land. Own the stories, then decide where they travel.”
+            </blockquote>
+            <figcaption class="mt-2 text-slate-600">— Rave Review Guru</figcaption>
+        </figure>
+    </section>
+
+    {{--    <div class="tidycal-embed" data-path="sslarsen411/30-minute-meeting-197lq0v"></div><script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>--}}
 </x-app-layout>
