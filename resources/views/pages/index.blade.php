@@ -33,7 +33,7 @@
     <section id="vsl" class="flex flex-row place-content-between text-center gap-12  bg-slate-900 text-amber-500 text-pretty w-full p-4">
         <div class="flex flex-row gap-24 mx-auto">
             <div class="p-4 hidden md:block ">
-                <img src="{{URL::asset("/images/stop-chasing-stars.gif")}}" alt="An animation of a man chasing a star."
+                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/stop-chasing-stars.gif")}}" alt="An animation of a man chasing a star."
                      class="h-24 mx-auto rounded-xl"/>
             </div>
             <div>
@@ -49,7 +49,7 @@
                 <!-- Image -->
                 <div class="md:w-1/4 mb-6 md:mb-0 text-center">
                     <img
-                        src="{{URL::asset("/images/joan_Rivers-1967.jpg")}}"
+                        src="{{URL::asset("https://cdn.mojoimpact.com/rrg/Joan-Rivers-1967.jpg")}}"
                         alt="Joan Rivers publicity photo, 1967"
                         class="mx-auto rounded-lg shadow-md mb-2 w-auto h-32"
                     />
@@ -213,7 +213,7 @@
                                 <h3 >
                                     Getting Reviews are a giant hassle
                                 </h3>
-                            <img src="{{URL::asset("/images/time-consuming-hassle.webp")}}" alt="time consuming hassle"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/time-consuming-hassle.webp")}}" alt="time consuming hassle"
                             class="object-cover object-center"/>
 {{--                            <figure>--}}
 {{--                                <img src="{{URL::asset("/images/time-consuming-hassle.webp")}}"--}}
@@ -253,7 +253,7 @@
                             <h3 >
                                 Customers ghost your requests
                             </h3>
-                            <img src="{{URL::asset("/images/reluctant.webp")}}" alt="a reluctant customer"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/reluctant.webp")}}" alt="a reluctant customer"
                                  class="object-cover object-center"/>
                             <p>
                                 Reviews feel like a homework assignment. They&apos;re seen as
@@ -270,7 +270,7 @@
                             <h3>
                                Inspire the desire
                             </h3>
-                            <img src="{{URL::asset("/images/enthusiastic.webp")}}" alt="an inspired customer"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/enthusiastic.webp")}}" alt="an inspired customer"
                                  class="object-cover object-center"/>
                             <p>
                                 With the Rave Review Guru you easily inspire your customers and spark their desire to
@@ -287,7 +287,7 @@
                             <h3>
                                 Asking feels awkward
                             </h3>
-                            <img src="{{URL::asset("/images/awkward-ask.webp")}}" alt="feeling awkward"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/awkward-ask.webp")}}" alt="feeling awkward"
                                  class="object-cover object-center"/>
                             <p>
                             <p>
@@ -325,7 +325,7 @@
                             <h3 >
                                Negative Reviews Suck
                             </h3>
-                            <img src="{{URL::asset("/images/tank.webp")}}" alt="sales are tanking"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/tank.webp")}}" alt="sales are tanking"
                                  class="object-cover object-center"/>
                             <p>
                                 One negative review could tank your reputation overnight. But a lack of a consistent
@@ -340,7 +340,7 @@
                             <h3>
                                 Accentuate the Positive
                             </h3>
-                            <img src="{{URL::asset("/images/tank.webp")}}" alt="a reluctant customer"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/tank.webp")}}" alt="a reluctant customer"
                                  class="object-cover object-center"/>
                             <p>
                                 Keep negative feedback private and request removal for troll reviews.

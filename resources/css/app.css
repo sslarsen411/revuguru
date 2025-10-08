@@ -137,10 +137,10 @@ article h3{
 }
 #nav_menu {
     @apply bg-zinc-50 lg:bg-transparent md:px-2 ml-auto lg:flex lg:justify-end md:space-x-2 absolute lg:relative
-    top-full left-0 w-1/2 mr-12 text-xl font-semibold;
+    top-full left-0  mr-12 text-xl font-semibold;
 }
 #nav_menu a {
-    @apply flex md:inline-flex p-4 items-center w-full text-amber-700 hover:text-amber-500;
+    @apply flex md:inline-flex p-4 items-center w-full text-amber-600 hover:text-amber-300;
 }
 /*#nav_menu a:hover {*/
 /*    @apply text-amber-100;*/

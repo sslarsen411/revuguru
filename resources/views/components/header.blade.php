@@ -2,13 +2,18 @@
 <header class="flex flex-row justify-between gap-3 py-4 w-full bg-slate-900">
     <div class=" flex ml-4">
         <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
-             class="h-16 px-2 w-auto inline bg-amber-300 rounded-full" alt="guru">
-        <h1 class="inline self-center text-2xl md:text-3xl lg:text-4xl ml-4">
+             class="h-16 px-2 w-auto inline bg-amber-400 rounded-full" alt="guru">
+        <h1 class="inline self-center text-2xl md:text-3xl lg:text-4xl ml-4 text-amber-400">
             Rave Review Guru
         </h1>
     </div>
-
+    <div class=" justify-start self-center">
+        <a href="/negative-reviews-dont-panic" class=" text-red-500 text-2xl hover:underline hover:text-amber-200" title="home">
+            <span>Negative Reviews?  Don&apos;t Panic!</span>
+        </a>
+    </div>
     <div class=" justify-end self-end">
+
         <nav>
             <ul id="nav_menu" class="hidden">
                 <li>

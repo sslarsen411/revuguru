@@ -18,6 +18,9 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+Route::get('/negative-reviews-dont-panic', function () {
+    return view('pages.negative-reviews-dont-panic');
+})->name('negative-reviews-dont-panic');
 Route::get('/lp', function () {
     return view('pages.lp');
 })->name('lp');
