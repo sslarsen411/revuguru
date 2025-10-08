@@ -232,7 +232,7 @@
                             <h3>
                                We make it smooth sailing
                             </h3>
-                            <img src="{{URL::asset("/images/smooth-sailing.webp")}}" alt="time consuming hassle"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/smooth-sailing.webp")}}" alt="time consuming hassle"
                                  class="bg-sky-300 px-4 py-2 object-cover object-center"/>
 {{--                            <figure>--}}
 {{--                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"--}}
