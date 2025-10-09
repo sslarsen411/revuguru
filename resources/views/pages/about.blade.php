@@ -1,4 +1,9 @@
-<x-app-layout>
+<x-app-layout :seo="[
+  'title' => 'About Rave Review Guru — Results-Focused Review Strategy',
+  'description' => 'We help small businesses turn reviews into durable marketing assets. Meet the team and our philosophy.',
+  'canonical' => route('about'),
+  'image' => asset('og/about.jpg'),
+]">
     <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
         <div class="mx-auto grid max-w-screen-xl px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0">
             <div class="content-center justify-self-start md:col-span-7 md:text-start">

@@ -1,4 +1,9 @@
-<x-app-layout>
+<x-app-layout :seo="[
+'title' => 'Solutions — Simplify, Automate, Enhance, Educate | Rave Review Guru',
+'description' => 'From easy ask scripts to AI-ready review optimization, our system turns customer feedback into visibility and revenue.',
+'canonical' => route('solutions'),
+'image' => asset('og/solutions.jpg'),
+]">
     <!--
   Rave Review Guru — Solutions (Services) Page
   Built with TailwindCSS utility classes

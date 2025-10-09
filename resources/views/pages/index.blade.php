@@ -1,4 +1,15 @@
-<x-app-layout>
+<x-app-layout :seo="[
+  'title' => 'Rave Review Guru | Turn Customer Reviews into Marketing Gold',
+  'description' => 'Simplify how you collect reviews, automate on-brand replies, and turn praise into AI-search-friendly proof.',
+  'canonical' => route('home'),
+  'image' => asset('og/home.jpg'),
+]">
+<x-seo-schema :json="[
+  '@context' => 'https://schema.org',
+  '@type' => 'Organization',
+  'name' => 'Rave Review Guru',
+  'url' => url('/'),
+]" />
     <section class="grid grid-cols-1 md:grid-cols-12 h-auto md:h-[70dvh] place-items-center bg-none md:bg-hero bg-cover bg-no-repeat bg-center"  >
         <div class="col-span-12 hidden md:block md:col-span-2">
             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/guru-rounded-l.webp")}}" alt="Rave Review Guru"
@@ -9,7 +20,7 @@
                 <span class="block text-lg md:text-xl lg:text-2xl mt-12">The Rave Review Guru says &ldquo;Let&apos;s face it&hellip; </span>
 
                 <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug block mt-6 text-red-800 break-words">
-                        Customer reviews are  giant pain in the @$$!
+                        Customer reviews are giant pain in the @$$!
                     </span>
             </h1>
             <h2 class="text-base md:text-xl lg:text-2xl my-6 text-slate-600">
@@ -211,7 +222,7 @@
                         <!-- Front -->
                         <div class="card__body-div card__front">
                                 <h3 >
-                                    Getting Reviews are a giant hassle
+                                    Getting Reviews is a giant hassle
                                 </h3>
                             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/time-consuming-hassle.webp")}}" alt="time consuming hassle"
                             class="object-cover object-center"/>
@@ -224,7 +235,7 @@
                                 Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
                             </p>
                             <p>
-                                No one know how to write a polished one and I have enough to do, so why add more work?.
+                                No one knows how to write a polished one and I have enough to do, so why add more work?.
                             </p>
                         </div>
                         <!-- Back -->
@@ -241,7 +252,8 @@
 {{--                            </figure>--}}
 
                             <p>Rave Review Guru makes the process <em>fast</em> and
-                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews
+                                flowing in like clockwork.</p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +307,7 @@
                             </p>
 
                             <p>
-                               Customers say they're overwhelmed by number review requests they get. They just delete them.
+                               Customers say they're overwhelmed by the number review requests they get. They just delete them.
                             </p>
 
                         </div>
@@ -452,7 +464,7 @@
                             free
                         </span>
                         no-pitch, no-obligation &frac12; hour consultation to spark a steady flow of reviews
-                        <a  href="https://www.sslarsenconsulting.com/calendar" class="text-red-700 hover:text-red-400" target="_blank" title="Main site">
+                        <a  href="/calendar" class="text-red-700 hover:text-red-400" title="Main site">
                             Book now.
                         </a>
                     </p>
