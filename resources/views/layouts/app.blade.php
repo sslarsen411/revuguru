@@ -15,20 +15,34 @@
 ])
 
 @php
-    $title = $seo['title'] ?? 'Rave Review Guru — Reviews into Marketing Gold';
-    $desc  = $seo['description'] ?? '';
-    $canon = $seo['canonical'] ?? url()->current();
-    $type  = $seo['type'] ?? 'website';
-    $url   = $seo['url'] ?? url()->current();
-    $img   = $seo['image'] ?? asset('og/default.jpg');
+    // Helpers
+  $www = rtrim(config('app.url'), '/'); // https://www.ravereview.guru
+  $abs = function ($value, $fallback = null) use ($www) {
+      $v = $value ?? $fallback;
+      if (!$v) return null;
+      return str_starts_with($v, 'http://') || str_starts_with($v, 'https://')
+          ? $v
+          : $www . '/' . ltrim($v, '/');
+  };
 
-    $ogTitle = $seo['og_title'] ?? $title;
-    $ogDesc  = $seo['og_description'] ?? $desc;
+  // Build canonical from APP_URL + current path
+  $canonical = $seo['canonical'] ?? ($www . request()->getRequestUri());
 
-    $twTitle = $seo['twitter_title'] ?? $ogTitle;
-    $twDesc  = $seo['twitter_description'] ?? $ogDesc;
-    $twImg   = $seo['twitter_image'] ?? $img;
+  // Compute core fields with sensible fallbacks
+  $title = $seo['title'] ?? 'Rave Review Guru — Reviews into Marketing Gold';
+  $desc  = $seo['description'] ?? 'We help small businesses collect, optimize, and leverage customer reviews. Simplify the ask, automate replies, and turn praise into AI-search-friendly proof.';
+  $type  = $seo['type'] ?? 'website';
+  $url   = $seo['url'] ?? $canonical;
 
+  // Always make images absolute and on the www host
+  $img   = $abs($seo['image'] ?? 'og/default.jpg');
+
+  $ogTitle = $seo['og_title'] ?? $title;
+  $ogDesc  = $seo['og_description'] ?? $desc;
+
+  $twTitle = $seo['twitter_title'] ?? $ogTitle;
+  $twDesc  = $seo['twitter_description'] ?? $ogDesc;
+  $twImg   = $abs($seo['twitter_image'] ?? $img);
     $brand = [
     'name' => 'Rave Review Guru',
     'url' => 'https://ravereview.guru',
@@ -55,7 +69,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ $title }}</title>
         <meta name="description" content="{{ $desc }}">
-        <link rel="canonical" href="{{ $canon }}">
+        <link rel="canonical" href="{{ $canonical }}">
 
         {{-- Open Graph --}}
         <meta property="og:site_name" content="Rave Review Guru">
