@@ -23,6 +23,9 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 /DATA
+/public/images
+/public/assets
+/public/fonts
 # Project exclude paths
 /storage/app/
 /storage/framework/
