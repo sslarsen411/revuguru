@@ -127,10 +127,133 @@
             </div>
         </div>
     </section>
+    <section id="fake-reviews-tips" class="relative mx-auto px-4 sm:px-6 lg:px-8 my-12">
+        <div class="mx-auto max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold">Handling Bad Reviews </h2>
+            <p class="mt-2 text-gray-600">
+                Sadly, it is possible to receive negative reviews that have nothing to do with your business. Shady
+                competitors, disgruntled employees, entitled &ldquo;influencers&rdquo; and out-and-out trolls can
+                post a review with the express purpose of damaging your business.
+            </p>
+{{--            <p>--}}
+{{--                <span class="font-semibold">Here are some tips to help you handle these reviews:</span>--}}
+{{--            </p>--}}
+            <hp class="text-2xl font-semibold tracking-tight text-gray-900">
+                Tips for spotting and reporting fake reviews
+            </hp>
+            <p class="my-2 text-sm text-gray-600">
+                Adapted from <a target="_blank"  class="text-red-800 hover:text-red-600 hover:underline"
+                              href="https://www.consumeraffairs.com/news/small-businesses-hit-by-global-scam-of-fake-negative-google-reviews-091125.html">
+                    ConsumerAffairs</a>’
+                coverage of coordinated fake negative Google reviews.
+            </p>
+        </div>
+        <div class="rounded-2xl border max-w-4xl mx-auto border-gray-200 bg-white shadow-sm">
+            <div class="px-6 py-6">
+                <ul class="space-y-5">
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16Zm3.707 6.293a1 1 0 00-1.414-1.414L9 10.172 7.707 8.879a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4Z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Watch for sudden rating drops</p>
+                            <p class="text-gray-600 text-sm">A cluster of 1-star reviews appearing at once is a red flag.</p>
+                        </div>
+                    </li>
 
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a8 8 0 00-8 8c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8zm1 11H9a1 1 0 01-1-1V7a1 1 0 112 0v4h1a1 1 0 110 2z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Look at reviewer profiles</p>
+                            <p class="text-gray-600 text-sm">Fake reviewers often have no profile photo, few past reviews, or reviews scattered across unrelated industries and locations.</p>
+                        </div>
+                    </li>
 
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M4 3a1 1 0 000 2h3.5a.5.5 0 01.5.5V8H4a1 1 0 100 2h4v2H4a1 1 0 100 2h4v2.5a.5.5 0 00.5.5H16a1 1 0 100-2H10v-2h6a1 1 0 100-2h-6V8h6a1 1 0 100-2h-6V3.5A.5.5 0 008.5 3H4z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Check for copy-and-paste language</p>
+                            <p class="text-gray-600 text-sm">Repeated phrases or nearly identical wording across multiple reviews may indicate fraud.</p>
+                        </div>
+                    </li>
 
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884A2 2 0 014 4h12a2 2 0 011.997 1.884l.5 8A2 2 0 0116.5 16H3.5a2 2 0 01-1.997-2.116l.5-8zM5 6a1 1 0 000 2h10a1 1 0 100-2H5z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Report suspicious reviews to Google</p>
+                            <p class="text-gray-600 text-sm">Use the <span class="font-medium">“Report review”</span> option directly in Google Maps; provide clear details explaining why it’s fake.</p>
+                        </div>
+                    </li>
 
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M5 4a2 2 0 00-2 2v8a2 2 0 002 2h10a2 2 0 002-2V9.414a2 2 0 00-.586-1.414l-3.414-3.414A2 2 0 0011.586 4H5zm5 3a1 1 0 110 2H7a1 1 0 110-2h3z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Keep records</p>
+                            <p class="text-gray-600 text-sm">Save screenshots of reviews and any related messages (emails, texts, WhatsApp) to document harassment or extortion attempts.</p>
+                        </div>
+                    </li>
+
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9 2a1 1 0 011 1v2h2a1 1 0 110 2h-2v6a2 2 0 104 0 1 1 0 112 0 4 4 0 11-8 0V7H6a1 1 0 110-2h3V3a1 1 0 011-1z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Avoid paying scammers</p>
+                            <p class="text-gray-600 text-sm">Payment rarely stops the attacks and can invite more.</p>
+                        </div>
+                    </li>
+
+                    <!-- Item -->
+                    <li class="flex gap-3">
+          <span class="mt-1.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-2 ring-amber-500">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 4a1 1 0 10-2 0v3H6a1 1 0 100 2h3v3a1 1 0 102 0v-3h3a1 1 0 100-2h-3V6z"/>
+            </svg>
+          </span>
+                        <div>
+                            <p class="font-medium text-gray-900">Need help? Report scams to the FTC</p>
+                            <p class="text-gray-600 text-sm">
+                                The FTC accepts complaints about online scams at
+                                <a href="https://reportfraud.ftc.gov" class="text-amber-700 underline underline-offset-2 hover:text-amber-800" rel="noopener noreferrer">reportfraud.ftc.gov</a>.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Optional footer note -->
+                <div class="mt-6 rounded-lg bg-amber-50 px-4 py-3 text-amber-900 text-sm">
+                    <p class="font-medium">Pro Tip:</p>
+                    <p>When you flag a review, include concrete reasons (timeline, mismatched details, lack of service history, identical wording across profiles) and attach your screenshots to speed up moderation decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Help / CTA -->
     <section class="px-6 md:px-10 lg:px-16 py-12">

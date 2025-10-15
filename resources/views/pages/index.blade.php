@@ -20,14 +20,14 @@
                 <span class="block text-lg md:text-xl lg:text-2xl mt-12">The Rave Review Guru says &ldquo;Let&apos;s face it&hellip; </span>
 
                 <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug block mt-6 text-red-800 break-words">
-                        Customer reviews are giant pain in the @$$!
+                        Customer reviews are a giant pain in the @$$!
                     </span>
             </h1>
             <h2 class="text-base md:text-xl lg:text-2xl my-6 text-slate-600">
                I&apos;ll show you a <strong><em>better</em></strong> way&hellip;
                 Because I've flipped the script on the entire review process!
             </h2>
-            <div class="flex place-items-center w-1/2 ">
+            <div class="flex place-items-center  ">
                 <button type="button" id="goToVsl"
                         class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none
                         bg-rust rounded-lg border border-gray-200 hover:bg-red-400 hover:text-gray-600
@@ -35,13 +35,16 @@
                     Discover It Now!
                 </button>
             </div>
+            <h4 class="text-sm md:text-base italic mt-12 text-center  text-slate-600">
+                Your Business Has a Voice. Let It Reverberate.
+            </h4>
         </div>
         <div class="hidden md:block col-span-12 md:col-span-5">
             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/pia-512.webp")}}" alt="reviews are a pain"
                  class="h-full w-auto mx-auto" />
         </div>
     </section>
-    <section id="vsl" class="flex flex-row place-content-between text-center gap-12  bg-slate-900 text-amber-500 text-pretty w-full p-4">
+    <section id="vsl" class="flex flex-row place-content-between text-center gap-12  bg-slate-900 text-amber-600 text-pretty w-full p-4">
         <div class="flex flex-row gap-24 mx-auto">
             <div class="p-4 hidden md:block ">
                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/stop-chasing-stars.gif")}}" alt="An animation of a man chasing a star."
@@ -49,7 +52,9 @@
             </div>
             <div>
                 <h2 class="text-xl md:text-4xl lg:text-6xl font-bold mb-5">Stop Chasing Stars!</h2>
-                <h3 class="text-base md:text-2xl lg:text-4xl font-normal"> Your reviews are too valuable to waste</h3>
+                <h3 class="text-base md:text-2xl lg:text-3xl font-normal">
+                    Stars fade. Your reviews are worth so much more!
+                </h3>
             </div>
         </div>
     </section>
@@ -78,7 +83,6 @@
                         “Can we talk&hellip; about reviews?”
                     </h2>
                     <p class="text-lg text-gray-700 mb-6">
-                        {{--                        <span class="font-bold text-red-600">No BS.</span>--}}
                         Joan Rivers famously cut through pretense with humor and honesty.
                         I’m doing the same for <strong>reviews</strong>.
                     </p>
@@ -100,7 +104,8 @@
                              your credibility and <strong><em>drive</em></strong> customers away.
                         </p>
                         <p>
-                            The <strong>real</strong> problem isn’t lack of stars, <strong>it’s lack of <ins>consistency</ins></strong>. An ongoing flow of fresh
+                            The <strong>real</strong> problem isn’t lack of stars, <strong>it’s lack of <ins>consistent
+                                    reviews</ins></strong>. An ongoing flow of fresh
                             reviews <strong><ins>wins</ins></strong> every time.
                         </p>
                     </div>
@@ -108,8 +113,9 @@
                         What if the secret to <span class="text-red-700 font-bold">more</span> reviews&hellip;<br> was to <span class="text-red-700 font-bold">stop</span>
                         chasing after them?
                     </h3>
-                    <p> Watch this short  2&half; minute video to learn more. →</p>
-{{--                </div>--}}
+                    <p>
+                        Watch this short  2&half; minute video to learn more. →
+                    </p>
             </div>
         </div>
         <div class="bg-white w-full col-span-12 md:col-span-7">
@@ -163,41 +169,34 @@
             <!-- ====== Video Section End -->
         </div>
     </section>
-    <section id="book_appt" class="bg-slate-900 text-zinc-50 shadow-lg">
+{{--  CTA 1 --}}
+    <section  class="bg-slate-900 text-zinc-50 shadow-lg">
         <div class="two__col two__col-pic-l p-8 md:p-0">
-            <div class="flex flex-col flex-wrap items-between w-full md:w-1/2">
-                <div class="w-full md:w-3/4 p-4">
-                    <h2 class="text-xl md:text-5xl max-w-[24ch] font-bold">
-                        Turn praise into <span class="text-amber-500 font-extrabold">profit</span>
+            <div class="flex flex-col flex-wrap items-between w-full md:w-2/3">
+                <div class="w-full md:w-3/4 p-4 ml-16">
+                    <h2 class="text-xl md:text-3xl text-amber-600 text-center font-bold">
+                        Reviews Make the Register Ring!
                     </h2>
                     <p class="py-6 text-base md:text-lg lg:text-2xl">
-                        Book a
-                        <span class="font-semibold text-amber-500">
-                            free
-                        </span>
-                        no-pitch, no-obligation &frac12; hour consultation to discover a better way to turn your customer&apos;s praise
-                        into your best marketing asset.
-                        <a  href="/calendar" class="text-amber-500 hover:text-red-400" target="_blank" title="Link to calendar">
-                            Book now.
+                        Find out how <span class="uppercase text-amber-600">now</span> with a fast, no-obligation
+                        <span class="text-amber-600 font-bold">Review Health Audit</span>. Discover
+                        your exact steps to spark a steady flow of authentic, customer attracting reviews.
+                        <a  href="/audit" class="text-amber-500 hover:text-red-400" target="_blank" title="link to audit">
+                            Start Free Audit
                         </a>
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col w-full md:w-1/2 py-2">
+            <div class="flex flex-col w-full md:w-1/3 py-2">
                 <div class="w-full bg-zinc-100 rounded-3xl p-2 ">
                     <div class="form-control mt-6 text-center">
-                        <h3 class="text-xl md:text-2xl lg:text-4xl text-slate-700 font-bold ">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 inline  w-auto" viewBox="0 0 24 24">
-                                <path fill="text-slate-800" d="M4 21V5h3.385V2.77h1.077V5h7.154V2.77h1V5H20v6.616h-1v-1H5V20h6.846v1zM5 9.615h14V6H5zm0 0V6zM14.23 21v-2.21l5.96-5.934l2.19 2.204L16.44 21zm6.886-5.94l-.925-.945zm-6 5.056h.95l3.467-3.474l-.47-.475l-.455-.488l-3.492 3.486zm3.948-3.949l-.456-.488l.925.963z" />
-                            </svg>
-                            Book a
-                            <span class="font-semibold text-amber-500">
-                                free
-                            </span> &frac12; hour consultation now.</h3>
+                        <p class="mt-3 text-xl text-slate-900">
+                            Kickstart momentum with a free <strong>Review Health Audit</strong>—no sales call required.
+                        </p>
                         <div class="px-4 pt-3 pb-4">
-                            <a type="button" href="/calendar" wire:navigate target="_blank"
+                            <a type="button" href="/audit" wire:navigate target="_blank"
                                class="bg-red-500 hover:bg-red-400 px-4 py-2 rounded-3xl hover:animate-pulse">
-                                Book Now
+                                Start Free Audit
                             </a>
                         </div>
                     </div>
@@ -206,12 +205,13 @@
         </div>
     </section>
     <!-- Trust block --> <!-- Trust block END -->
-
     <!-- Pain/Solution block -->
     <section class="mx-auto px-4 py-16 bg-gray-200 mb-8">
         <div class="max-w-7xl mx-auto">
             <header class="mb-8 text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-red-600">Review Challenges and Answers</h2>
+                <h2 class="text-3xl font-bold tracking-tight text-orange-700">
+                    Review Challenges and Guru Answers
+                </h2>
                 <p class="mt-2 text-sm block md:hidden text-gray-600">Tap a card to flip.</p>
             </header>
             <!-- Card Grid -->
@@ -226,16 +226,12 @@
                                 </h3>
                             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/time-consuming-hassle.webp")}}" alt="time consuming hassle"
                             class="object-cover object-center"/>
-{{--                            <figure>--}}
-{{--                                <img src="{{URL::asset("/images/time-consuming-hassle.webp")}}"--}}
-{{--                                     alt="Pain">--}}
-{{--                                <figcaption>&ldquo;Is it even worth it?&rdquo;</figcaption>--}}
-{{--                            </figure>--}}
                             <p>
                                 Collecting reviews is a complicated, time-wasting nightmare&hellip; and for what?.
                             </p>
                             <p>
-                                No one knows how to write a polished one and I have enough to do, so why add more work?.
+                                No one knows how to write a polished review, and I already have enough to do — so
+                                why add more work?
                             </p>
                         </div>
                         <!-- Back -->
@@ -245,12 +241,6 @@
                             </h3>
                             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/smooth-sailing.webp")}}" alt="time consuming hassle"
                                  class="bg-sky-300 px-4 py-2 object-cover object-center"/>
-{{--                            <figure>--}}
-{{--                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"--}}
-{{--                                     alt="Guru">--}}
-{{--                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>--}}
-{{--                            </figure>--}}
-
                             <p>Rave Review Guru makes the process <em>fast</em> and
                                 <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews
                                 flowing in like clockwork.</p>
@@ -305,23 +295,19 @@
                             <p>
                                 My staff and I are uncomfortable asking customers to write reviews.
                             </p>
-
                             <p>
                                Customers say they're overwhelmed by the number review requests they get. They just delete them.
                             </p>
-
                         </div>
                         <!-- Back -->
                         <div class="card__body-div card__back">
-                            <h3 class="text-2xl md:text-2xl text-center">
+                            <h3 >
                                 Eliminate the Hassle
                             </h3>
-                            <figure>
-                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
-                                     alt="Guru">
-                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
-                            </figure>
-                            <p>
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/sslc/grinding-friction.webp")}}"
+                                 alt="grinding gears">
+                            <p class="mt-2 text-base/5 text-white/90">
+
                                 You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
                             </p>
                             <p class="mt-2 text-base/5 text-white/90">Rave Review Guru makes the process <em>fast</em> and
@@ -341,7 +327,7 @@
                                  class="object-cover object-center"/>
                             <p>
                                 One negative review could tank your reputation overnight. But a lack of a consistent
-                                flow of reviews will also tank your business
+                                flow of reviews will also tank your business.
                             </p><p>
                                Worse, trolls, unhappy customers and disgruntled ex-employees can use
                                 the process for revenge.
@@ -352,13 +338,15 @@
                             <h3>
                                 Accentuate the Positive
                             </h3>
-                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/tank.webp")}}" alt="a reluctant customer"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/growth.webp")}}" alt="a reluctant customer"
                                  class="object-cover object-center"/>
                             <p>
                                 Keep negative feedback private and request removal for troll reviews.
                             </p>
                             <p>Rave Review Guru makes the process <em>fast</em> and
-                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh
+                                reviews flowing in like clockwork.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -370,7 +358,7 @@
                             <h3 >
                                 Ignorance
                             </h3>
-                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                            <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/confused-man.webp")}}"
                                  alt="Guru">
                             <p>
                                 Most owners, staff, and customers are all equally clueless about how to write
@@ -378,24 +366,23 @@
                             </p>
                             <p>
                                 How can you <strong>expect</strong> your customers to write a review if
-                                <span class="text-red-600"><ins>you</ins></span> don&apos;t know?
+                                <span class="text-red-600"><ins>you</ins></span> don&apos;t know how?
                             </p>
                         </div>
                         <!-- Back -->
                         <div class="card__body-div card__back">
                             <h3>
-                                Eliminate the Hassle
+                                Teach in 60 Seconds
                             </h3>
-                            <figure>
-                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
+                                <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/ah-ha-man.webp")}}"
                                      alt="Guru">
-                                <figcaption>&ldquo;Easy Peezy&rdquo;</figcaption>
-                            </figure>
+
                             <p>
-                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                                We give your team a one-minute “Ask Script,” simple prompts customers can follow, and
+                                real review examples—so everyone knows how to ask, and customers know exactly what to
+                                write (without sounding fake).
                             </p>
-                            <p>Rave Review Guru makes the process <em>fast</em> and
-                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+
                         </div>
                     </div>
                 </div>
@@ -421,15 +408,16 @@
                         <!-- Back -->
                         <div class="card__body-div card__back">
                             <h3>
-                                Eliminate the Hassle
+                                Ask at the Right Moment
                             </h3>
                             <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
                                  alt="Guru">
                             <p>
-                                You need reviews because they&apos;re word-of-mouth promoting your business to 1000s 24/7
+                                We time the ask for the “peak-happy” moment, deliver a two-tap review link, and
+                                automate a friendly nudge 48–72 hours later. Right timing + low friction = more
+                                reviews, fast.
                             </p>
-                            <p>Rave Review Guru makes the process <em>fast</em> and
-                                <strong>easy</strong>. Our system cuts through the hassle, to give you fresh reviews flowing in like clockwork.</p>
+
                         </div>
                     </div>
                 </div>
@@ -438,36 +426,40 @@
     </section>
     <!-- CTA 2 -->
     <section class="bg-zinc-950 text-zinc-50 shadow-lg">
-        <div class="two__col two__col-pic-l p-8 md:p-0">
-            <div class="flex flex-col w-full md:w-1/2 py-2">
-                <div class="w-3/4 bg-zinc-100 rounded-3xl p-2 ">
-                    <div class="form-control mt-6 text-center">
-                        <h3 class="text-xl md:text-2xl lg:text-4xl text-slate-700 font-bold ">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 inline  w-auto" viewBox="0 0 24 24">
-                                <path fill="text-slate-800" d="M4 21V5h3.385V2.77h1.077V5h7.154V2.77h1V5H20v6.616h-1v-1H5V20h6.846v1zM5 9.615h14V6H5zm0 0V6zM14.23 21v-2.21l5.96-5.934l2.19 2.204L16.44 21zm6.886-5.94l-.925-.945zm-6 5.056h.95l3.467-3.474l-.47-.475l-.455-.488l-3.492 3.486zm3.948-3.949l-.456-.488l.925.963z" />
-                            </svg>
-                            Book a
-                            <span class="font-semibold text-amber-500">
-                                free
-                            </span> &frac12; hour consultation now.</h3>
+        <div class="two__col two__col-pic-l p-4 gap-16 justify-between">
+            <div class="two__col two__col-pic-l p-8 md:p-0">
+                <div class="flex flex-col w-full md:w-1/3 py-2 ml-16">
+                    <div class="w-full bg-zinc-100 rounded-3xl p-2 ">
+                        <div class="form-control mt-6 text-center">
+                            <p class="mt-3 text-xl text-slate-900">
+                                Kickstart momentum with a free <strong>Review Health Audit</strong>—no sales call required.
+                            </p>
+                            <div class="px-4 pt-3 pb-4">
+                                <div class="justify-self-center">
+                                    <a type="button" href="/audit"
+                                       class="bg-orange-300 hover:bg-orange-100 text-gray-800 font-semibold py-2
+                                              px-4 border border-orange-600 rounded shadow">
+                                        Start Free Audit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col flex-wrap items-between w-full md:w-1/2">
-                <div class="w-full md:w-3/4 p-4">
-                    <h2 class="text-xl md:text-4xl font-semibold">
-                       Make your business shine
-                    </h2>
-                    <p class="py-6 text-base md:text-lg lg:text-2xl">
-                        Book a
-                        <span class="font-semibold text-amber-500">
-                            free
-                        </span>
-                        no-pitch, no-obligation &frac12; hour consultation to spark a steady flow of reviews
-                        <a  href="/calendar" class="text-red-700 hover:text-red-400" title="Main site">
-                            Book now.
-                        </a>
-                    </p>
+                <div class="flex flex-col flex-wrap items-between w-full md:w-2/3">
+                    <div class="w-full px-16">
+                        <h2 class="text-xl md:text-3xl text-orange-600 text-center font-bold">
+                            Get Praise That Pays!
+                        </h2>
+                        <p class="py-6 text-base md:text-lg lg:text-2xl">
+                            Find out how <span class="uppercase text-amber-600">now</span> with a fast, no-obligation
+                            <span class="text-amber-600 font-bold">Review Health Audit</span>. Discover
+                            your exact steps to spark a steady flow of authentic, customer attracting reviews.
+                            <a  href="/audit" class="text-amber-500 hover:text-red-400" target="_blank" title="link to audit">
+                                Start Free Audit
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

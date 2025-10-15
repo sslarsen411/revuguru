@@ -3,7 +3,10 @@
 
     <section class="mx-auto max-w-5xl px-4 py-12 lg:py-16">
         <!-- Headline -->
+        <img src="{{URL::asset("/images/reviews-are-a-pain.webp")}}"
+             alt="a shop owner bothered by reviews">
         <header class="mb-6 bg-pia bg-contain bg-no-repeat bg-right h-44">
+
             <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
                 Why Are Customer Reviews Such a Pain in the You‑Know‑What?
             </h1>

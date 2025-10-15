@@ -1,14 +1,17 @@
 {{--@props(['step' => ''])--}}
 <header class="flex flex-row justify-between gap-3 py-4 w-full bg-slate-900">
-    <div class=" flex ml-4">
+    <div class=" flex flex-row ml-4">
         <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/review-guru-bust.webp")}}"
              class="h-16 px-2 w-auto inline bg-amber-400 rounded-full" alt="guru">
-        <h1 class="inline self-center text-2xl md:text-3xl lg:text-4xl ml-4 text-amber-400">
+        <div class="flex flex-col justify-center">
+        <h1 class="inline self-center text-2xl md:text-3xl lg:text-4xl ml-4 text-amber-600">
             Rave Review Guru
         </h1>
+        <h2 class="text-sm italic self-center text-amber-500">Review Reverberation</h2>
+        </div>
     </div>
     <div class=" justify-start self-center">
-        <a href="/negative-reviews-dont-panic" class=" text-red-500 text-2xl hover:underline hover:text-amber-200" title="home">
+        <a href="/negative-reviews-dont-panic" class=" text-zinc-50 text-2xl hover:underline hover:text-orange-300" title="home">
             <span>Negative Reviews?  Don&apos;t Panic!</span>
         </a>
     </div>

@@ -15,12 +15,6 @@
 
     --color-rust: #731702;
     --color-bluegray: #465475;
-    --color-avocado-100: oklch(0.99 0 0);
-    --color-avocado-200: oklch(0.98 0.04 113.22);
-    --color-avocado-300: oklch(0.94 0.11 115.03);
-    --color-avocado-400: oklch(0.92 0.19 114.08);
-    --color-avocado-500: oklch(0.84 0.18 117.33);
-    --color-avocado-600: oklch(0.53 0.12 118.34);
 
     --background-image-hero: url('https://cdn.mojoimpact.com/rrg/bg-img.webp');
     --background-image-pia: url('https://cdn.mojoimpact.com/rrg/bg2.webp');
@@ -61,37 +55,214 @@
         @apply mb-0;
     }
 }
-article p{
-    @apply text-base md:text-lg lg:text-xl;
-}
-article h2{
-    @apply text-xl md:text-2xl lg:text-3xl my-4 text-red-900;
-}
-article h3{
-    @apply text-lg md:text-xl lg:text-2xl text-shadow-stone-700 mb-2;
+@layer components {
+    article p{
+        @apply text-base md:text-lg lg:text-xl;
+    }
+    article h2{
+        @apply text-xl md:text-2xl lg:text-3xl my-4 text-red-900;
+    }
+    article h3{
+        @apply text-lg md:text-xl lg:text-2xl text-shadow-stone-700 mb-2;
+    }
+    /* Two-column layout */
+    .two__col {
+        @apply flex items-center flex-col  mx-auto max-w-screen-2xl;
+    }
+    .two__col-pic-l {
+        @apply md:flex-row;
+    }
+    /* Multi-column layout */
+    .multi__col {
+        @apply m-auto grid sm:grid-cols-1  md:grid-cols-2 gap-0 md:gap-8;
+    }
+    .multi__col-3col {
+        @apply lg:grid-cols-3;
+    }
+    .multi__col-4col {
+        @apply lg:grid-cols-4;
+    }
+    .multi__col-div {
+        @apply flex flex-col place-items-center;
+    }
+    /* Blog wrapper: width + base text color + spacing */
+    .blog {
+        @apply text-pretty mx-auto max-w-3xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 lg:px-8 py-10 text-slate-800;
+    }
+
+    /* Vertical rhythm */
+    .blog > * + * {
+        @apply mt-6;
+    }
+
+    /* Links */
+    .blog a {
+        @apply text-amber-600 underline underline-offset-2 decoration-amber-300 hover:text-amber-700 hover:decoration-amber-600;
+    }
+
+    /* Headings (primary slate with amber accent) */
+    .blog h1,
+    .blog h2,
+    .blog h3,
+    .blog h4,
+    .blog h5,
+    .blog h6 {
+        @apply font-poppins text-slate-700 tracking-tight;
+    }
+
+    .blog h1 {
+        @apply text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight pb-2;
+    }
+
+    .blog h2 {
+        @apply mt-10 mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight pb-1;
+    }
+
+    .blog h3 {
+        @apply mt-8 mb-2 text-xl md:text-2xl lg:text-3xl font-normal text-stone-600;
+    }
+
+    .blog h4 {
+        @apply mt-6 mb-2 text-lg md:text-xl lg:text-2xl ;
+    }
+
+    .blog h5 {
+        @apply mt-4 text-base md:text-lg lg:text-xl;
+    }
+
+    .blog h6 {
+        @apply mt-4 text-sm md:text-base lg:text-lg text-slate-700;
+    }
+
+    /* Paragraphs & lists (responsive sizes) */
+    .blog p {
+        @apply text-base md:text-lg lg:text-xl leading-relaxed;
+    }
+
+    .blog ul,
+    .blog ol {
+        @apply my-6 pl-6;
+    }
+
+    .blog ul {
+        @apply list-disc marker:text-amber-600;
+    }
+
+    .blog ol {
+        @apply list-decimal;
+    }
+
+    .blog li {
+        @apply text-base md:text-lg lg:text-xl leading-relaxed mb-2;
+    }
+
+    /* Figures & captions */
+    .blog figure {
+        @apply my-8;
+    }
+    .blog figcaption {
+        @apply mt-2 text-sm text-slate-500;
+    }
+
+    /* Blockquotes */
+    .blog blockquote {
+        @apply my-8 pl-5 border-l-4 border-amber-600 italic text-slate-700;
+    }
+
+    /* Code blocks & inline code */
+    .blog pre {
+        @apply my-6 overflow-x-auto rounded-lg bg-slate-900 text-slate-100 p-4 text-sm leading-relaxed;
+    }
+    .blog code {
+        @apply rounded px-1.5 py-0.5 bg-slate-100 text-slate-900 text-sm;
+    }
+
+    /* Images */
+    .blog img {
+        @apply rounded-lg shadow-sm mx-auto;
+    }
+
+    /* Tables (optional but handy) */
+    .blog table {
+        @apply w-full text-left border-collapse my-6;
+    }
+    .blog thead th {
+        @apply border-b-2 border-slate-200 pb-2 text-slate-900;
+    }
+    .blog tbody td {
+        @apply border-b border-slate-100 py-2 align-top;
+    }
+    .tldr{
+        @apply mb-8 rounded-2xl border border-gray-200 bg-zinc-50 p-5 max-w-4xl;
+    }
+
+    .tldr h2{
+        @apply mt-0 text-2xl md:text-4xl leading-relaxed text-red-900;
+    }
+    .tldr p{
+        @apply text-xl md:text-2xl;
+    }
+    /* Prose variant: apply to <div class="blog prose"> */
+    .blog.prose {
+        @apply leading-relaxed;
+    }
+
+    /* Slightly tighter vertical rhythm than base */
+    .blog.prose > * + * {
+        @apply mt-5 md:mt-6;
+    }
+
+    /* Larger first paragraph + drop cap */
+    .blog.prose p:first-of-type {
+        @apply text-lg md:text-xl lg:text-2xl;
+    }
+    .blog.prose p:first-of-type::first-letter {
+        @apply float-left font-semibold text-amber-600 mr-2;
+        /* Use arbitrary utilities for a classic drop-cap feel */
+        line-height: 0.9;         /* keeps the cap snug */
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+    }
+
+    /* Headings: a touch more presence in prose mode */
+    .blog.prose h1 { @apply lg:text-6xl; }
+    .blog.prose h2 { @apply lg:text-5xl; }
+    .blog.prose h3 { @apply lg:text-4xl; }
+    .blog.prose h4 { @apply lg:text-3xl; }
+
+    /* Lists: better readability + inside markers on mobile */
+    .blog.prose ul,
+    .blog.prose ol {
+        @apply pl-5 sm:pl-6 my-5;
+    }
+    .blog.prose li {
+        @apply mb-1.5;
+    }
+
+    /* Blockquotes: lighter body, stronger accent */
+    .blog.prose blockquote {
+        @apply text-slate-700 border-l-4 border-amber-600/90 pl-5 italic;
+    }
+
+    /* Horizontal rule for section breaks */
+    .blog.prose hr {
+        @apply my-10 border-t border-slate-200;
+    }
+
+    /* Figures & captions: center + softer caption */
+    .blog.prose figure { @apply my-8; }
+    .blog.prose figcaption { @apply text-center text-slate-500; }
+
+    /* Inline code a hair smaller in prose for flow */
+    .blog.prose code { @apply text-[0.95em]; }
 }
 
-.two__col {
-    @apply flex items-center flex-col  mx-auto max-w-screen-2xl;
-}
-.two__col-pic-l {
-    @apply md:flex-row;
-}
-.multi__col {
-    @apply m-auto grid sm:grid-cols-1  md:grid-cols-2 gap-0 md:gap-8;
-}
-.multi__col-3col {
-    @apply lg:grid-cols-3;
-}
-.multi__col-4col {
-    @apply lg:grid-cols-4;
-}
-.multi__col-div {
-    @apply flex flex-col place-items-center;
-}
+
+
+
 .card_group {
     @apply relative h-96 perspective-[1200px];
 }
+/* Homepage flip cards */
 .card__body {
     @apply  relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d]
     group-hover:[transform:rotateY(180deg)] group-focus-within:[transform:rotateY(180deg)];
@@ -126,6 +297,8 @@ article h3{
 @apply rounded-2xl bg-gradient-to-br from-slate-600 to-slate-900 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden];
 }
 .card__back h3{@apply text-amber-500;}
+/* FOOTER */
+/* Scroll to top button -  all pages*/
 .btnScrollToTop {
     @apply w-10 h-10 rounded-4xl bg-rust/40 text-zinc-300/40 hover:text-zinc-50 z-50 fixed bottom-60 right-2 md:right-8 hover:animate-bounce hover:bg-red-800/90 transition-all duration-300 ease-in-out;
 }
@@ -135,6 +308,7 @@ article h3{
 .trade:after {
     @apply text-current -ml-2 align-top font-normal content-['\2122'];
 }
+/* HEADER */
 #nav_menu {
     @apply bg-zinc-50 lg:bg-transparent md:px-2 ml-auto lg:flex lg:justify-end md:space-x-2 absolute lg:relative
     top-full left-0  mr-12 text-xl font-semibold;
@@ -142,9 +316,7 @@ article h3{
 #nav_menu a {
     @apply flex md:inline-flex p-4 items-center w-full text-amber-600 hover:text-amber-300;
 }
-/*#nav_menu a:hover {*/
-/*    @apply text-amber-100;*/
-/*}*/
+
 .sub_menu--item {
     @apply flex px-4 py-3;
 }
@@ -194,4 +366,36 @@ article h3{
 }
 .peer.open ~ .peer-open\:block {
     @apply block;
+}
+/* About page montage images*/
+.montage {
+    @apply block md:grid grid-cols-1 md:grid-cols-6 gap-y-4 items-center;
+}
+.montage__img {
+    @apply mx-auto my-2 shadow-md transition-all ease-in-out delay-500;
+}
+.montage__img--1 {
+    @apply w-[115%]  z-10;
+    grid-row: 1/ 2;
+    grid-column: 2 / 5;
+}
+.montage__img--2 {
+    @apply w-[155%]  z-10;
+    grid-row: 1 / 3;
+    grid-column: 4 / 7;
+}
+.montage__img--3 {
+    @apply w-[125%]  z-30;
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+}
+
+.montage__img--1:hover,
+.montage__img--3:hover {
+    @apply scale-125 rotate-6 z-50;
+}
+.montage__img--2:hover,
+.montage__img--4:hover,
+.struggle:hover {
+    @apply scale-125 -rotate-6 z-50;
 }

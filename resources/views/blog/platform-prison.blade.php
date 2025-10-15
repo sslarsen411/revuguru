@@ -7,11 +7,14 @@
                 <span class="h-2 w-2 rounded-full bg-rose-500"></span>
                 Trap #5: The Platform Prison
             </div>
-            <h1 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
-                The Platform Prison: Why Letting Google, Yelp, or Angi “Own” Your Reviews Puts Your Growth at Risk
+            <img src="{{URL::asset("/images/the-platform-prison.webp")}}"
+                 alt="a businessman behind bars">
+            <h1 class="mt-4 text-3xl md:text-4xl leading-9 font-bold tracking-tight text-slate-900">
+                The Platform Prison: Why Letting Google, Yelp, or Facebook “Own” Your Reviews Puts Your Growth at Risk
             </h1>
-            <p class="mt-4 text-lg text-slate-700">
-                Your customer reviews are pure trust—the most persuasive marketing you’ll ever have. But if platforms control how (or whether) those reviews are seen, you’re building your reputation on rented land.
+            <p class="mt-4 text-xl text-slate-700">
+                Your customer reviews are pure trust and the most persuasive marketing you’ll ever have. But if
+                platforms control how (or even <span class="italic font-bold">if</span>) those reviews are seen, you’re building your reputation on rented land.
             </p>
         </header>
 
@@ -19,12 +22,14 @@
         <section class="space-y-4 mb-10">
             <h2 class="text-xl font-bold text-slate-900">The Trap, in Plain English</h2>
             <p class="text-slate-700">
-                You rely entirely on third-party platforms to collect, display, and distribute your reviews. It feels convenient—until an algorithm change, moderation quirk, or pay-to-play upsell quietly throttles your visibility.
+                You rely entirely on third-party platforms to collect, display, and distribute your reviews. It feels
+                convenient—until an algorithm change, moderation quirk, or pay-to-play upsell quietly throttles your visibility.
             </p>
             <div class="rounded-lg border border-slate-200 bg-slate-50 p-5">
-                <p class="font-medium text-slate-800">Metaphor:</p>
+                <p class="text-lg text-slate-800">Think of it this way&hellip;</p>
                 <p class="text-slate-700">
-                    It’s like showcasing your best testimonials in someone else’s store window. They can change the lighting, rearrange the shelves, or close the shop—any time, without notice.
+                    It’s like showcasing your best testimonials in someone else’s store window. They can change the
+                    lighting, rearrange the shelves, or close the shop at any time, without notice.
                 </p>
             </div>
         </section>
