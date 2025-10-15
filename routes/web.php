@@ -1,39 +1,28 @@
 <?php
 
-use App\Livewire\Calendar;
+//use App\Livewire\Calendar;
 use Illuminate\Support\Facades\Route;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 Route::get('/', function () {
     return view('pages.index');
 })->name('home');
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
-Route::get('/blog', function () {
-    return view('pages.blog');
-})->name('blog');
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
-Route::get('/negative-reviews-dont-panic', function () {
-    return view('pages.negative-reviews-dont-panic');
-})->name('negative-reviews-dont-panic');
-Route::get('/lp', function () {
-    return view('pages.lp');
-})->name('lp');
-Route::get('/solutions', function () {
-    return view('pages.solutions');
-})->name('solutions');
-Route::get('/platform', function () {
-    return view('/blog.platform-prison');
-})->name('platform');
-Route::get('/reviews-are-a-pain', function () {
-    return view('/blog.reviews-are-a-pain');
-})->name('pain');
-//Route::get('/calendar', function () {
-//    return view('pages.calendar');
-//})->name('calendar');
-Route::get('/calendar', Calendar::class);
+Route::get('/{page}', function (string $page) {
+    // Map /blog/my-post -> view('blog.my-post')
+    $view = 'pages.' . $page;
+    if (View::exists($view)) {
+        return view($view, ['page' => $page]);
+    }
+    abort(404);
+})->where('page', '[A-Za-z0-9\-_]+');
+Route::get('/blog/{slug}', function (string $slug) {
+    // Map /blog/my-post -> view('blog.my-post')
+    $view = 'blog.' . $slug;
+    if (View::exists($view)) {
+        return view($view);
+    }
+    abort(404);
+})->where('slug', '[A-Za-z0-9\-_]+')->name('slug');
+Route::get('/alt', function () {
+    return view('pages.alt');
+})->name('alt');
+
