@@ -138,32 +138,72 @@
         </main>
     </div>
     @push('scripts')
-        @verbatim
-            <script type="application/ld+json">
-                {
-                  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The Hidden Power of Reviews Most Local Business Owners Overlook",
-  "author": {"@type": "Person", "name": "The Rave Review Guru"},
-  "publisher": {"@type": "Organization", "name": "The Rave Review Guru"},
-  "datePublished": "2025-10-16",
-  "image": "https://www.ravereview.guru/path-to-header-image.jpg",
-  "about": ["Customer reviews", "Local SEO", "Reputation management"],
-  "keywords": [
-    "hidden power of reviews",
-    "local business reviews",
-    "customer review strategy",
-    "online reputation management",
-    "Google reviews for local business",
-    "review marketing",
-    "reputation control",
-    "AI and customer reviews"
-  ],
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.ravereview.guru/hidden-power-of-reviews"},
-  "description": "Most business owners see reviews as an SEO tactic. Discover the deeper value that turns customer feedback into your most powerful marketing asset."
-}
-            </script>
-        @endverbatim
+        @php
+            // --- Derive values from your model/variables ---
+            $headline   = $post->title ?? ($title ?? 'Untitled Post');
+            $authorName = $post->author->name ?? $post->author_name ?? 'The Rave Review Guru';
+            $publisher  = 'The Rave Review Guru';
+
+            // Dates as ISO-8601 (YYYY-MM-DD)
+            $published  = isset($post->published_at)
+                ? (\Carbon\Carbon::parse($post->published_at)->toDateString())
+                : (isset($published_at) ? \Carbon\Carbon::parse($published_at)->toDateString() : now()->toDateString());
+
+            $modified   = isset($post->updated_at)
+                ? (\Carbon\Carbon::parse($post->updated_at)->toDateString())
+                : $published;
+
+            // Canonical URL and image
+            $url   = $post->url ?? ($post->slug ?? null ? url('/blog/'.$post->slug) : url()->current());
+            $image = $post->featured_image_url
+                ?? $post->image_url
+                ?? ($image_url ?? asset('images/blog/default-header.jpg'));
+
+            // Description fallback (meta_description > excerpt > trimmed body)
+            $desc = $post->meta_description
+                ?? $post->excerpt
+                ?? ($post->summary ?? (isset($post->body) ? trim(strip_tags($post->body)) : null));
+            if ($desc && mb_strlen($desc) > 300) {
+                $desc = mb_substr($desc, 0, 300).'…';
+            }
+
+            // About/keywords normalization to arrays
+            $aboutRaw = $post->about ?? ($about ?? []);
+            $about = is_string($aboutRaw) ? array_map('trim', array_filter(explode(',', $aboutRaw))) : (array) $aboutRaw;
+
+            $keywordsRaw = $post->seo_keywords ?? $post->keywords ?? ($keywords ?? []);
+            $keywords = is_string($keywordsRaw) ? array_map('trim', array_filter(explode(',', $keywordsRaw))) : (array) $keywordsRaw;
+
+            // --- Build JSON-LD ---
+            $ld = array_filter([
+                '@context' => 'https://schema.org',
+                '@type' => 'BlogPosting',
+                'headline' => $headline,
+                'author' => ['@type' => 'Person', 'name' => $authorName],
+                'publisher' => ['@type' => 'Organization', 'name' => $publisher],
+                'datePublished' => $published,
+                'dateModified' => $modified,
+                'image' => $image,
+                'about' => $about ?: ['Customer reviews', 'Local SEO', 'Reputation management'],
+                'keywords' => $keywords ?: [
+                    'hidden power of reviews',
+                    'local business reviews',
+                    'customer review strategy',
+                    'online reputation management',
+                    'Google reviews for local business',
+                    'review marketing',
+                    'reputation control',
+                    'AI and customer reviews',
+                ],
+                'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $url],
+                'url' => $url,
+                'description' => $desc ?: 'Discover how to turn customer feedback into a powerful marketing asset.',
+            ]);
+        @endphp
+
+        <script type="application/ld+json">
+            {!! json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+        </script>
     @endpush
 
 </x-app-layout>
