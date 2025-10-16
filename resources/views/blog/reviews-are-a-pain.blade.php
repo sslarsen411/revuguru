@@ -3,7 +3,7 @@
 
     <section class="mx-auto max-w-5xl px-4 py-12 lg:py-16">
         <!-- Headline -->
-        <img src="{{URL::asset("/images/reviews-are-a-pain.webp")}}"
+        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/blog/reviews-are-a-pain.webp")}}"
              alt="a shop owner bothered by reviews">
         <header class="mb-6 bg-pia bg-contain bg-no-repeat bg-right h-44">
 

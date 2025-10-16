@@ -1,23 +1,30 @@
-<x-app-layout>
-    <!-- Trap #5: The Platform Prison — Blog Post (Tailwind CSS) -->
-    <article class="max-w-3xl mx-auto px-6 py-12">
-        <!-- Header -->
-        <header class="mb-10">
-            <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
-                <span class="h-2 w-2 rounded-full bg-rose-500"></span>
-                Trap #5: The Platform Prison
-            </div>
-            <img src="{{URL::asset("/images/the-platform-prison.webp")}}"
-                 alt="a businessman behind bars">
-            <h1 class="mt-4 text-3xl md:text-4xl leading-9 font-bold tracking-tight text-slate-900">
+<x-app-layout :seo="[
+  'title' => 'The Platform Prison | Rave Review Guru Blog Post',
+  'description' => 'Why Letting Google, Yelp, or Facebook “Own” Your Reviews Puts Your Growth at Risk.',
+  'canonical' => 'https://www.ravereview.guru/blog/' . $page,
+  'image' => asset('og/the-platform-prison.webp'),
+]">
+    <div class="blog">
+        <p class="text-xs uppercase tracking-widest text-amber-700/80 font-semibold">Trap #5: The Platform Prison</p>
+        <!-- TL;DR -->
+        <div class="tldr">
+            <h2>TL;DR</h2>
+            <p>
+                <span class="mr-1">👉</span>
+                Tired of Google or Yelp holding your reviews hostage? Learn how to take control of your reviews!
+            </p>
+        </div>
+        <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/blog/the-platform-prison.webp")}}"
+             alt="A business owner trapped in platform prison">
+        <header class="mb-6">
+            <h1>
                 The Platform Prison: Why Letting Google, Yelp, or Facebook “Own” Your Reviews Puts Your Growth at Risk
             </h1>
-            <p class="mt-4 text-xl text-slate-700">
+            <p>
                 Your customer reviews are pure trust and the most persuasive marketing you’ll ever have. But if
                 platforms control how (or even <span class="italic font-bold">if</span>) those reviews are seen, you’re building your reputation on rented land.
             </p>
         </header>
-
         <!-- Overview -->
         <section class="space-y-4 mb-10">
             <h2 class="text-xl font-bold text-slate-900">The Trap, in Plain English</h2>
@@ -168,27 +175,29 @@
         </figure>
 
         <!-- CTA -->
-        <section class="mt-12 rounded-xl border border-slate-200 bg-gradient-to-br from-amber-50 to-slate-50 p-6">
-            <h3 class="text-lg md:text-xl font-bold text-slate-900">Turn Praise into Profit</h3>
-            <p class="mt-2 text-slate-700">
-                Want help setting up a first-party review capture system and “Evidence Library” that feeds your website, social, and sales? Book a free, no-pitch 30-minute consult.
-            </p>
-            <div class="mt-4">
-                <a href="/calendar" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-white font-semibold hover:bg-amber-700">
-                    Book a Free Consult
-                </a>
-            </div>
-        </section>
+{{--        <section class="mt-12 rounded-xl border border-slate-200 bg-gradient-to-br from-amber-50 to-slate-50 p-6">--}}
+{{--            <h3 class="text-lg md:text-xl font-bold text-slate-900">Turn Praise into Profit</h3>--}}
+{{--            <p class="mt-2 text-slate-700">--}}
+{{--                Want help setting up a first-party review capture system and “Evidence Library” that feeds your website, social, and sales? Book a free, no-pitch 30-minute consult.--}}
+{{--            </p>--}}
+{{--            <div class="mt-4">--}}
+{{--                <a href="/calendar" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-5 py-3 text-white font-semibold hover:bg-amber-700">--}}
+{{--                    Book a Free Consult--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <!-- Ending prompt -->
         <p class="mt-10 text-slate-700">
             Would you like a full content outline for any of these?
         </p>
-    </article>
-    <figure class="my-10 rounded-lg border border-slate-200 bg-white p-6">
-        <blockquote class="text-xl font-semibold text-slate-900">
-            “The value of a review isn’t in the stars—it’s in the specifics.”
-        </blockquote>
-        <figcaption class="mt-2 text-slate-600">— Rave Review Guru</figcaption>
-    </figure>
+
+        <figure class="my-10 rounded-lg border border-slate-200 bg-white p-6">
+            <blockquote class="text-xl font-semibold text-slate-900">
+                “The value of a review isn’t in the stars—it’s in the specifics.”
+            </blockquote>
+            <figcaption class="mt-2 text-slate-600">— Rave Review Guru</figcaption>
+        </figure>
+    </div>
+
 </x-app-layout>

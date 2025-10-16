@@ -1,6 +1,17 @@
 <x-app-layout>
    <div class="blog">
-       <img src="{{URL::asset("/images/reviews-are-a-pain.webp")}}"
+       <p class="text-xs uppercase tracking-widest text-amber-700/80 font-semibold">Reputation & Ethics</p>
+       <!-- TL;DR -->
+       <div class="tldr">
+           <h2>TL;DR</h2>
+           <p>
+               <span class="mr-1">👉</span>
+               Customer reviews aren’t a pain because your customers <strong>don’t care</strong>.
+               They’re a <strong>pain</strong> because the whole process is <strong>clunky, confusing</strong>, and
+               <strong>uncomfortable</strong> for everyone involved. <a href="#rrg-solutions">Here's how to fix it</a>
+           </p>
+       </div>
+       <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/blog/reviews-are-a-pain.webp")}}"
             alt="a shop owner bothered by reviews">
        <header class="mb-6">
            <h1>
@@ -11,16 +22,7 @@
            </h2>
        </header>
         <section>
-            <!-- TL;DR -->
-            <div class="tldr">
-                <h2>TL;DR</h2>
-                <p>
-                    <span class="mr-1">👉</span>
-                    Customer reviews aren’t a pain because your customers <strong>don’t care</strong>.
-                    They’re a <strong>pain</strong> because the whole process is <strong>clunky, confusing</strong>, and
-                    <strong>uncomfortable</strong> for everyone involved. <a href="#rrg-solutions">Here's how to fix it</a>
-                </p>
-            </div>
+
             <h3 id="from-the-customers-point-of-view">
                 Consider your request the customer’s point of view
             </h3>

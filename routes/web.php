@@ -1,6 +1,5 @@
 <?php
 
-//use App\Livewire\Calendar;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,7 +17,7 @@ Route::get('/blog/{slug}', function (string $slug) {
     // Map /blog/my-post -> view('blog.my-post')
     $view = 'blog.' . $slug;
     if (View::exists($view)) {
-        return view($view);
+        return view($view, ['page' => $slug]);
     }
     abort(404);
 })->where('slug', '[A-Za-z0-9\-_]+')->name('slug');
