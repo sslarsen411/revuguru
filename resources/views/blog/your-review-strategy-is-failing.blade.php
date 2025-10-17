@@ -1,4 +1,10 @@
-<x-app-layout>
+<x-app-layout :seo="[
+  'title' => 'Your Review Strategy Is Failing Because You’re Making It a Contest Instead of a Connection | Rave Review Guru Blog Post',
+  'description' => ' Most local businesses struggle with awkward review requests that feel uncomfortable for everyone.
+                The fix? Reframe reviews from a contest to a connection',
+  'canonical' => 'https://www.ravereview.guru/blog/' . $page,
+  'image' => asset('/blog/2025/contest2/hero-1200.webp'),
+]">
     <div class="blog">
         <p class="text-xs uppercase tracking-widest text-amber-700/80 font-semibold">The Ask</p>
         <div class="tldr">
@@ -137,73 +143,6 @@
             </article>
         </main>
     </div>
-    @push('scripts')
-        @php
-            // --- Derive values from your model/variables ---
-            $headline   = $post->title ?? ($title ?? 'Untitled Post');
-            $authorName = $post->author->name ?? $post->author_name ?? 'The Rave Review Guru';
-            $publisher  = 'The Rave Review Guru';
-
-            // Dates as ISO-8601 (YYYY-MM-DD)
-            $published  = isset($post->published_at)
-                ? (\Carbon\Carbon::parse($post->published_at)->toDateString())
-                : (isset($published_at) ? \Carbon\Carbon::parse($published_at)->toDateString() : now()->toDateString());
-
-            $modified   = isset($post->updated_at)
-                ? (\Carbon\Carbon::parse($post->updated_at)->toDateString())
-                : $published;
-
-            // Canonical URL and image
-            $url   = $post->url ?? ($post->slug ?? null ? url('/blog/'.$post->slug) : url()->current());
-            $image = $post->featured_image_url
-                ?? $post->image_url
-                ?? ($image_url ?? asset('images/blog/default-header.jpg'));
-
-            // Description fallback (meta_description > excerpt > trimmed body)
-            $desc = $post->meta_description
-                ?? $post->excerpt
-                ?? ($post->summary ?? (isset($post->body) ? trim(strip_tags($post->body)) : null));
-            if ($desc && mb_strlen($desc) > 300) {
-                $desc = mb_substr($desc, 0, 300).'…';
-            }
-
-            // About/keywords normalization to arrays
-            $aboutRaw = $post->about ?? ($about ?? []);
-            $about = is_string($aboutRaw) ? array_map('trim', array_filter(explode(',', $aboutRaw))) : (array) $aboutRaw;
-
-            $keywordsRaw = $post->seo_keywords ?? $post->keywords ?? ($keywords ?? []);
-            $keywords = is_string($keywordsRaw) ? array_map('trim', array_filter(explode(',', $keywordsRaw))) : (array) $keywordsRaw;
-
-            // --- Build JSON-LD ---
-            $ld = array_filter([
-                '@context' => 'https://schema.org',
-                '@type' => 'BlogPosting',
-                'headline' => $headline,
-                'author' => ['@type' => 'Person', 'name' => $authorName],
-                'publisher' => ['@type' => 'Organization', 'name' => $publisher],
-                'datePublished' => $published,
-                'dateModified' => $modified,
-                'image' => $image,
-                'about' => $about ?: ['Customer reviews', 'Local SEO', 'Reputation management'],
-                'keywords' => $keywords ?: [
-                    'hidden power of reviews',
-                    'local business reviews',
-                    'customer review strategy',
-                    'online reputation management',
-                    'Google reviews for local business',
-                    'review marketing',
-                    'reputation control',
-                    'AI and customer reviews',
-                ],
-                'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $url],
-                'url' => $url,
-                'description' => $desc ?: 'Discover how to turn customer feedback into a powerful marketing asset.',
-            ]);
-        @endphp
-
-        <script type="application/ld+json">
-            {!! json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-        </script>
-    @endpush
+    <x-schema.blog-post title="Coming Soon: Favor Flow vs Enticement" />
 
 </x-app-layout>
