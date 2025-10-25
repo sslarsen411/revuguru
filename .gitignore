@@ -29,3 +29,4 @@ Thumbs.db
 # Project exclude paths
 /storage/app/
 /storage/framework/
+/app/Console/Commands/MakeBlogImages.php

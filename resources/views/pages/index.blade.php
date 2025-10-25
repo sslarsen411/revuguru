@@ -114,7 +114,7 @@
                         chasing after them?
                     </h3>
                     <p>
-                        Watch this short  2&half; minute video to learn more. →
+                        Watch this short  1&half; minute video to learn more. →
                     </p>
             </div>
         </div>
@@ -128,7 +128,7 @@
                             <div class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px] p-2">
                                 <div class="flex flex-col items-center justify-center h-full w-1/2 ">
                                     <p class="text-amber-500 text-5xl tracking-tight leading-12 w-[10ch]">
-                                        A better way to review nirvana
+                                        Discover your way to review nirvana
                                     </p>
                                 </div>
                                 <div class="absolute right-0 top-0 h-auto w-1/2">
@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary/90">
                                     <a href="javascript:void(0)"
-                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/WS-video.mp4")}}' "
+                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/RaveReviewGuru_audit_sm.mp4")}}' "
                                        class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-teal-700/80 text-primary md:h-[100px] md:w-[100px] dark:bg-dark-2 dark:text-white">
                                         <span class="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white/20 delay-300 duration-1000">     </span>
                                         <svg width="23" height="27" viewBox="0 0 23 27"  xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@
                     </h2>
                     <p class="py-6 text-base md:text-lg lg:text-2xl">
                         Find out how <span class="uppercase text-amber-600">now</span> with a fast, no-obligation
-                        <span class="text-amber-600 font-bold">Review Health Audit</span>. Discover
+                        <span class="text-amber-600 font-bold">Review Mastery Audit</span>. Discover
                         your exact steps to spark a steady flow of authentic, customer attracting reviews.
                         <a  href="/audit" class="text-amber-500 hover:text-red-400" target="_blank" title="link to audit">
                             Start Free Audit
@@ -191,7 +191,7 @@
                 <div class="w-full bg-zinc-100 rounded-3xl p-2 ">
                     <div class="form-control mt-6 text-center">
                         <p class="mt-3 text-xl text-slate-900">
-                            Kickstart momentum with a free <strong>Review Health Audit</strong>—no sales call required.
+                            Kickstart momentum with a free <strong>Review Mastery Audit</strong>—no sales call required.
                         </p>
                         <div class="px-4 pt-3 pb-4">
                             <a type="button" href="/audit" wire:navigate target="_blank"

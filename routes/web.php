@@ -16,6 +16,7 @@ Route::get('/{page}', function (string $page) {
 Route::get('/blog/{slug}', function (string $slug) {
     // Map /blog/my-post -> view('blog.my-post')
     $view = 'blog.' . $slug;
+ //   ray(View::exists($view));
     if (View::exists($view)) {
         return view($view, ['page' => $slug]);
     }

@@ -138,9 +138,9 @@
 {{--            <p>--}}
 {{--                <span class="font-semibold">Here are some tips to help you handle these reviews:</span>--}}
 {{--            </p>--}}
-            <hp class="text-2xl font-semibold tracking-tight text-gray-900">
+            <h3 class="text-2xl font-semibold tracking-tight text-gray-900">
                 Tips for spotting and reporting fake reviews
-            </hp>
+            </h3>
             <p class="my-2 text-sm text-gray-600">
                 Adapted from <a target="_blank"  class="text-red-800 hover:text-red-600 hover:underline"
                               href="https://www.consumeraffairs.com/news/small-businesses-hit-by-global-scam-of-fake-negative-google-reviews-091125.html">
@@ -249,9 +249,51 @@
                 <!-- Optional footer note -->
                 <div class="mt-6 rounded-lg bg-amber-50 px-4 py-3 text-amber-900 text-sm">
                     <p class="font-medium">Pro Tip:</p>
-                    <p>When you flag a review, include concrete reasons (timeline, mismatched details, lack of service history, identical wording across profiles) and attach your screenshots to speed up moderation decisions.</p>
+                    <p>
+                        When you flag a review, include concrete reasons (timeline, mismatched details, lack of
+                        service history, identical wording across profiles) and attach your screenshots to speed up moderation decisions.
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="mx-auto max-w-5xl">
+            <h2 class="text-2xl md:text-3xl text-red-800 my-5 font-bold">
+                Fake-Review Extortion: When the threat is real
+            </h2>
+            <p>
+                One malicious tactic is a sudden wave of 1-star/2-star reviews from unknown accounts followed by a
+                demand: “Pay us or we’ll keep posting.” This is <strong>extortion</strong>, not a normal negative review. Google now
+                documents these “review extortion” scams and provides a dedicated reporting process.
+            </p>
+
+            <h4 class="font-semibold text-2xl" mb-5>
+                What to do right now
+            </h4>
+            <ul class="list-disc list-inside text-xl">
+                <li>
+                    <strong>Do not engage, do not pay, do not negotiate.</strong>
+                </li>
+                <li>
+                    <strong>Document everything.</strong> Take screenshots of each review, any messages or
+                    contact details, and note timestamps and profile links.
+                </li>
+                <li>
+                    <strong>Report to Google using their Merchant Extortion form</strong> and attach your evidence.
+                    Use this form: <a href="https://support.google.com/business/contact/merchant_extortion"
+                                     class="text-red-700 hover:text-red-400 hover:underline" target="_blank" rel="noopener">
+                        Google Merchant Extortion Report</a>.</li>
+                <li>
+                    <strong>Read Google’s guidance on reporting review-extortion scams</strong> before you file:
+                    <a href="https://support.google.com/business/answer/16404809" target="_blank" class="text-red-700 hover:text-red-400 hover:underline" rel="noopener">
+                        Report negative review extortion scams on your Business Profile</a>.
+                </li>
+                <li>
+                    <strong>Escalate where appropriate.</strong> You can also report suspicious review activity to
+                    the FTC for broader scam tracking: <a href="https://consumer.ftc.gov/articles/how-report-suspicious-online-reviews"
+                     class="text-red-700 hover:text-red-400 hover:underline" target="_blank" rel="noopener">
+                        FTC – How to report suspicious online reviews</a>.
+                </li>
+            </ul>
         </div>
     </section>
 

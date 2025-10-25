@@ -27,6 +27,29 @@
                 consistently and ethically now and in the future.
             </p>
         </div>
+        <div class="md:col-span-7 md:mt-0 md:flex flex-col">
+            <h2 class="text-2xl font-semibold text-slate-900">Partnering for Review Success</h2>
+            <p class="mt-4 text-slate-700">
+                Great reviews begin with great experiences. There is no magic fairy dust that can turn a poor customer experience into glowing praise. Our work only succeeds when it’s done <span class="font-semibold">with</span> you, not <span class="font-semibold">for</span> you.
+            </p>
+            <p class="mt-4 text-slate-700">
+                We team up with businesses ready to listen, learn, and lead with integrity. Together we build a cohesive review strategy grounded in real customer feedback—amplifying what works and fixing what doesn’t. Five-star reviews are earned, not manufactured.
+            </p>
+
+
+{{--                <p class="text-sm font-medium uppercase tracking-wide text-slate-600">The 0th Law of Reviews</p>--}}
+                <blockquote class="mt-2 border-l-4 border-amber-500 pl-4 text-lg font-semibold text-slate-900">
+                    Five-star reviews are the result of a five-star customer experience.
+                </blockquote>
+{{--                <ul class="mt-4 list-disc space-y-2 pl-6 text-slate-700">--}}
+{{--                    <li>Solicit and actively listen to customer feedback.</li>--}}
+{{--                    <li>Use feedback to enhance what works and correct what doesn’t.</li>--}}
+{{--                    <li>Avoid manipulation. Authenticity protects customers and the marketplace.</li>--}}
+{{--                </ul>--}}
+            </div>
+        <div class="md:col-span-5 md:mt-0 md:flex">
+            <img src="{{URL::asset("/images/review-guru-love.webp")}}" class="h-60 w-auto mx-auto" alt="chick">
+        </div>
     </section>
 {{--    <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">--}}
 {{--        <div class="mx-auto grid max-w-screen-xl px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0">--}}
