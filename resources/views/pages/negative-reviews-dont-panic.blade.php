@@ -1,4 +1,11 @@
-<x-app-layout>
+<x-app-layout
+    :seo="[
+'title' => 'Negative Reviews Don’t Panic! Rave Review Guru',
+'description' => 'How to handle negative reviews and turn them into positive outcomes.',
+'canonical' => 'https://www.ravereview.guru/' . $page,
+'image' => asset('og/contact.jpg'),
+]">
+
     <section class="px-6 md:px-10 lg:px-16 py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div class="max-w-5xl mx-auto">
             <h1 class="text-3xl md:text-5xl font-bold tracking-tight">
@@ -319,4 +326,10 @@
             <p class="mt-4 font-semibold">Rave Review Guru — where even bad reviews can lead to good outcomes.</p>
         </div>
     </section>
+    @push('scripts')
+        <script>
+            const currentPageName = "{{$page}}";
+            //  console.log("The current page name is: " + currentPageName);
+        </script>
+    @endpush
 </x-app-layout>

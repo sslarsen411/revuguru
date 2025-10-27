@@ -247,5 +247,10 @@
         </p>
 
     </section>
-    {{--    <div class="tidycal-embed" data-path="sslarsen411/30-minute-meeting-197lq0v"></div><script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>--}}
+    @push('scripts')
+        <script>
+            const currentPageName = "{{$page}}";
+            //  console.log("The current page name is: " + currentPageName);
+        </script>
+    @endpush
 </x-app-layout>

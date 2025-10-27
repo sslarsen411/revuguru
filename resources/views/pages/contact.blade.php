@@ -68,6 +68,10 @@
         <div class="tidycal-embed" data-path="sslarsen411/30-minute-meeting-197lq0v"></div>
     </section>
     @push('scripts')
+        <script>
+            const currentPageName = "{{$page}}";
+            //  console.log("The current page name is: " + currentPageName);
+        </script>
         <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
     @endpush
 </x-app-layout>

@@ -67,10 +67,7 @@
     </div>
 </footer>
 @push("scripts")
-    <script>
-        const currentPageName = "{{Route::currentRouteName()}}";
-      //  console.log("The current page name is: " + currentPageName);
-    </script>
+
     <script>fetch("https://guru.ravereview.guru/api/get-chatbot",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chatbotId:"686c4c1d0b363875086c2d6e",url:`${window.location.href}`})}).then(function(e){if(200===e.status)return e.text();throw new Error("Error fetching data, status code: "+e.status)}).then(function(e){var t=document.createElement("script");t.innerHTML=e,document.body.appendChild(t)}).catch(function(e){console.error("Fetch error: ",e)});</script>
 @endpush
 <button title="Scroll back to the top" id="btnScrollToTop" class="btnScrollToTop btn">

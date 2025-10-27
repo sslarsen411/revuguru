@@ -143,6 +143,6 @@
             </article>
         </main>
     </div>
-    <x-schema.blog-post title="Coming Soon: Favor Flow vs Enticement" />
+{{--    <x-schema.blog-post title="Coming Soon: Favor Flow vs Enticement" />--}}
 
 </x-app-layout>

@@ -36,7 +36,7 @@
                 </button>
             </div>
             <h4 class="text-sm md:text-base italic mt-12 text-center  text-slate-600">
-                Your Business Has a Voice. Let It Reverberate.
+                Your Business Has a Unique Voice. Let It Reverberate.
             </h4>
         </div>
         <div class="hidden md:block col-span-12 md:col-span-5">
@@ -44,17 +44,22 @@
                  class="h-full w-auto mx-auto" />
         </div>
     </section>
-    <section id="vsl" class="flex flex-row place-content-between text-center gap-12  bg-slate-900 text-amber-600 text-pretty w-full p-4">
-        <div class="flex flex-row gap-24 mx-auto">
-            <div class="p-4 hidden md:block ">
+    <section class="flex flex-row place-content-between text-center gap-12  bg-slate-900 text-amber-600 text-pretty w-full p-4">
+        <div class="flex flex-row gap-24 mx-auto ">
+            <div class="p-4 hidden md:block self-center">
                 <img src="{{URL::asset("https://cdn.mojoimpact.com/rrg/stop-chasing-stars.gif")}}" alt="An animation of a man chasing a star."
                      class="h-24 mx-auto rounded-xl"/>
             </div>
             <div>
                 <h2 class="text-xl md:text-4xl lg:text-6xl font-bold mb-5">Stop Chasing Stars!</h2>
-                <h3 class="text-base md:text-2xl lg:text-3xl font-normal">
+                <h3 class="text-base md:text-2xl lg:text-3xl font-normal text-zinc-50">
                     Stars fade. Your reviews are worth so much more!
                 </h3>
+                <a href="/audit"
+                   class="inline-block bg-amber-500 hover:bg-amber-300 text-slate-900 font-bold text-lg my-5
+                   md:text-xl px-6 py-3 rounded-full transition">
+                    Find Out How Much →
+                </a>
             </div>
         </div>
     </section>
@@ -424,6 +429,148 @@
             </div>
         </div>
     </section>
+    <!-- CTA -->
+    <section class="w-full bg-slate-900 text-amber-600 px-4 py-12">
+        <h2 class="text-center text-xl md:text-2xl lg:text-3xl my-4 text-amber-500">
+            Take control of your reviews&hellip; It's easy!
+        </h2>
+        <!-- How it works + CTA (quick trust primer) -->
+        <div class="max-w-5xl mx-auto mb-10 grid md:grid-cols-3 gap-6 text-slate-100">
+            <div class="bg-slate-800 rounded-xl p-5">
+                <h4 class="text-lg font-semibold">1) Take the Audit</h4>
+                <p class="text-sm opacity-80">Get a no-fluff snapshot of review gaps and untapped value.</p>
+            </div>
+            <div class="bg-slate-800 rounded-xl p-5">
+                <h4 class="text-lg font-semibold">2) Get a Plan</h4>
+                <p class="text-sm opacity-80">A tailored system for steady review velocity and trust signals.</p>
+            </div>
+            <div class="bg-slate-800 rounded-xl p-5">
+                <h4 class="text-lg font-semibold">3) Execute</h4>
+                <p class="text-sm opacity-80">Light tooling + simple habits. Results measured weekly.</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-2">
+            <a href="/audit"
+               class="inline-block bg-amber-600 hover:bg-amber-500 text-slate-900 font-bold text-lg px-6 py-3 rounded-full transition">
+                Start the Free Audit
+            </a>
+        </div>
+
+
+    </section>
+    <!-- FAQ -->
+    <section class="max-w-5xl mx-auto">
+        <h2 class="text-xl md:text-2xl lg:text-3xl my-4 text-slate-800">
+            Frequently Asked Questions
+        </h2>
+        <div x-data="{ open: null }" class="max-w-4xl mx-auto divide-y divide-slate-700">
+            <!-- Item -->
+            <div class="py-4">
+                <button @click="open === 1 ? open = null : open = 1"
+                        :aria-expanded="open === 1"
+                        class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">Who is the Rave Review Guru?</span>
+                    <span class="ml-4" x-text="open === 1 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 1" x-collapse class="mt-3 ">
+                    I’m Scott Larsen. I build simple review systems for local service businesses. No hype. Clear process. See the <a href="/about" class="underline text-amber-400">About</a> page for background.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 2 ? open = null : open = 2" :aria-expanded="open === 2" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">What’s your game?</span>
+                    <span class="ml-4" x-text="open === 2 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 2" x-collapse class="mt-3 ">
+                    Education first. Then a practical system to earn steady, authentic reviews and use them to build trust across Google and AI search. The audit shows your upside, then you decide.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 3 ? open = null : open = 3" :aria-expanded="open === 3" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">Does this actually work?</span>
+                    <span class="ml-4" x-text="open === 3 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 3" x-collapse class="mt-3 ">
+                    Yes, when applied. Results come from consistent asks, zero friction, and timely follow-ups. We focus on weekly review velocity, response quality, and conversion impact. The audit benchmarks these.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 4 ? open = null : open = 4" :aria-expanded="open === 4" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">Is this for my kind of business?</span>
+                    <span class="ml-4" x-text="open === 4 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 4" x-collapse class="mt-3 ">
+                    Best fit: local home, personal, and professional services in competitive markets. Not a fit: businesses seeking fake reviews or “set-and-forget” shortcuts.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 5 ? open = null : open = 5" :aria-expanded="open === 5" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">How is this different from ‘get more reviews’ tools?</span>
+                    <span class="ml-4" x-text="open === 5 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 5" x-collapse class="mt-3 ">
+                    Tools blast links. We design a repeatable ask, remove friction, time the request, and optimize responses. Then we turn reviews into trust assets for search and conversions.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 6 ? open = null : open = 6" :aria-expanded="open === 6" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">What about cost?</span>
+                    <span class="ml-4" x-text="open === 6 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 6" x-collapse class="mt-3 ">
+                    Start with the free audit. If you move forward, pricing is simple and month-to-month. No lock-ins. You should see value within the first review cycles.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 7 ? open = null : open = 7" :aria-expanded="open === 7" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">Do you do anything sketchy?</span>
+                    <span class="ml-4" x-text="open === 7 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 7" x-collapse class="mt-3 ">
+                    No. No fake reviews. No incentives tied to star ratings. We follow platform policies and focus on genuine feedback and public responses that build trust.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 8 ? open = null : open = 8" :aria-expanded="open === 8" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">How fast will I see results?</span>
+                    <span class="ml-4" x-text="open === 8 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 8" x-collapse class="mt-3 ">
+                    Typical pattern: first wins in 1–3 weeks as the ask cadence lands. Compounding impact over 60–90 days as review velocity normalizes and responses improve conversions.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 9 ? open = null : open = 9" :aria-expanded="open === 9" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">Can I DIY this without RRG?</span>
+                    <span class="ml-4" x-text="open === 9 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 9" x-collapse class="mt-3 ">
+                    Yes. Use a clear ask, send the link right after service, remove steps, and respond to every review. Our system just reduces friction and keeps you consistent.
+                </div>
+            </div>
+
+            <div class="py-4">
+                <button @click="open === 10 ? open = null : open = 10" :aria-expanded="open === 10" class="w-full flex justify-between items-center text-left">
+                    <span class="font-semibold text-amber-500">What’s the next step?</span>
+                    <span class="ml-4" x-text="open === 10 ? '–' : '+'"></span>
+                </button>
+                <div x-show="open === 10" x-collapse class="mt-3 ">
+                    Take the <a href="/audit" class="underline text-amber-400">Rave Review Guru Audit</a>. You’ll see how much more your reviews are worth and exactly where to start.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- CTA 2 -->
     <section class="bg-zinc-950 text-zinc-50 shadow-lg">
         <div class="two__col two__col-pic-l p-4 gap-16 justify-between">
@@ -432,7 +579,7 @@
                     <div class="w-full bg-zinc-100 rounded-3xl p-2 ">
                         <div class="form-control mt-6 text-center">
                             <p class="mt-3 text-xl text-slate-900">
-                                Kickstart momentum with a free <strong>Review Health Audit</strong>—no sales call required.
+                                Kickstart momentum with a free <strong>Review Mastery Audit</strong>—no sales call required.
                             </p>
                             <div class="px-4 pt-3 pb-4">
                                 <div class="justify-self-center">
@@ -453,7 +600,7 @@
                         </h2>
                         <p class="py-6 text-base md:text-lg lg:text-2xl">
                             Find out how <span class="uppercase text-amber-600">now</span> with a fast, no-obligation
-                            <span class="text-amber-600 font-bold">Review Health Audit</span>. Discover
+                            <span class="text-amber-600 font-bold">Review Mastery Audit</span>. Discover
                             your exact steps to spark a steady flow of authentic, customer attracting reviews.
                             <a  href="/audit" class="text-amber-500 hover:text-red-400" target="_blank" title="link to audit">
                                 Start Free Audit
@@ -475,5 +622,26 @@
             });
         });
     </script>
+        <!-- FAQPage JSON-LD -->
+        @verbatim
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Who is the Rave Review Guru?","acceptedAnswer":{"@type":"Answer","text":"Scott Larsen builds simple review systems for local service businesses focused on steady review velocity and trust. See the About page for background."}},
+    {"@type":"Question","name":"What’s your game?","acceptedAnswer":{"@type":"Answer","text":"Education first, then a practical system to earn authentic reviews and use them to build trust across Google and AI search. The audit reveals your upside."}},
+    {"@type":"Question","name":"Does this actually work?","acceptedAnswer":{"@type":"Answer","text":"Yes when applied. Results come from consistent asks, low friction, good timing, and quality responses measured weekly."}},
+    {"@type":"Question","name":"Is this for my kind of business?","acceptedAnswer":{"@type":"Answer","text":"Best for local home, personal, and professional services in competitive markets. Not for anyone seeking fake reviews or shortcuts."}},
+    {"@type":"Question","name":"How is this different from ‘get more reviews’ tools?","acceptedAnswer":{"@type":"Answer","text":"We design behavior and process, not blasts. Then we turn reviews into trust assets that lift search and conversions."}},
+    {"@type":"Question","name":"What about cost?","acceptedAnswer":{"@type":"Answer","text":"Start with the free audit. If you proceed, pricing is simple and month-to-month. You should see early value in the first cycles."}},
+    {"@type":"Question","name":"Do you do anything sketchy?","acceptedAnswer":{"@type":"Answer","text":"No fake reviews. No incentives tied to ratings. We follow platform policies and focus on genuine feedback."}},
+    {"@type":"Question","name":"How fast will I see results?","acceptedAnswer":{"@type":"Answer","text":"Often 1–3 weeks for first wins and compounding impact over 60–90 days as cadence normalizes."}},
+    {"@type":"Question","name":"Can I DIY this without RRG?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use a clear ask post-service, remove steps, and respond to every review. Our system reduces friction and keeps you consistent."}},
+    {"@type":"Question","name":"What’s the next step?","acceptedAnswer":{"@type":"Answer","text":"Take the Rave Review Guru Audit to see how much more your reviews are worth and where to start."}}
+  ]
+}
+        </script>
+        @endverbatim
     @endpush
 </x-app-layout>
