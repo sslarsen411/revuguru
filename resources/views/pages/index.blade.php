@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary/90">
                                     <a href="javascript:void(0)"
-                                       @click="videoOpen = true; videoSrc = '{{URL::asset("/assets/RaveReviewGuru_audit_sm.mp4")}}' "
+                                       @click="videoOpen = true; videoSrc = '{{URL::asset("https://cdn.mojoimpact.com/rrg/video/RaveReviewGuru_audit_sm.mp4")}}' "
                                        class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-teal-700/80 text-primary md:h-[100px] md:w-[100px] dark:bg-dark-2 dark:text-white">
                                         <span class="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white/20 delay-300 duration-1000">     </span>
                                         <svg width="23" height="27" viewBox="0 0 23 27"  xmlns="http://www.w3.org/2000/svg"
